@@ -1,0 +1,496 @@
+ <div class="slider-container">
+            <div class="menu">
+                 <!-- <label for="slide-dot-1"></label>  -->
+                <!-- <label for="slide-dot-2"></label> -->
+                 <!-- <label for="slide-dot-3"></label>  -->
+            </div> 
+            <p>Bienvenue dans RandyShop <br>
+            la refernce du E_Commerce en matiere d'electronique</p>
+
+            <!-- <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+            <img class="slide-img" src="./Caroussel img/1.jpg"> -->
+
+            <!-- <input class="slide-input" id="slide-dot-2" type="radio" name="slides"> -->
+            <img class="slide-img" src="./Caroussel img/2.jpg">
+
+            <!-- <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+            <img class="slide-img" src="./Caroussel img/3.jpg"> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+        <nav>
+            <h1><a href="./index.html"> Randy<span>Shop</span></a></h1>
+            <a href="">Accueil</a>
+            <a href="">Categories</a>
+            <a href="">Produits</a>
+            <a href="./panier.html"><img src="./shopping-basket.svg" alt=""></a>
+            <button>Checkout</button>
+        </nav>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher...">
+            <button type="submit">Rechercher</button>
+        </div>
+        
+            </div> 
+            <div class="caroussel">
+                <img class="carousselImg" src="./Caroussel img/2.jpg">
+            <p class="carousselTxt"><h3> Bienvenue dans RandyShop</h3> <br>
+            la refernce du E_Commerce en matiere d'electronique, Lorem ipsum dolor sit amet consectetur,
+            <br> adipisicing elit. Earum quia veritatis quasi ea, rerum quaerat.</p>
+
+            
+            
+        </div>
+
+        </div>
+    
+
+    <main>
+        <div class="mainHead">
+        <h2>Nous vous recommandons</h2>
+        <button>Voir Plus</button>
+        </div>
+            
+        </div>
+    
+        
+    </main> 
+        <div class="backMain">
+        <div class="produits">   <img class="prodImg" src="./Produits recommandes/a.png" alt=""></div>
+        <div class="produits">    <img class="prodImg" src="./Produits recommandes/e.png" alt=""></div>
+        <div class="produits">   <img class="prodImg" src="./Produits recommandes/i.png" alt=""> </div>
+        <div class="produits">  <img class="prodImg" src="./Produits recommandes/r.png" alt=""> </div>
+        <div class="produits">  <img class="prodImg" src="./Produits recommandes/t.png" alt=""> </div>
+        <div class="produits">  <img class="prodImg" src="./Produits recommandes/u.png "alt=""> </div>
+        <div class="produits">   <img class="prodImg" src="./Produits recommandes/y.png" alt=""> </div>
+        <div class="produits">  <img class="prodImg" src="./Produits recommandes/z.png" alt=""> </div>
+        
+        </div>
+
+        <div class="seo">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quam libero illum exercitationem tempora,
+                <br> incidunt, animi vel neque aperiam asperiores molestias, quisquam quia suscipit a debitis. Dignissimos quo non error.
+            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio obcaecati cum laboriosam molestias porro sapiente deleniti,
+            <br> nulla architecto blanditiis minus dolorem numquam reprehenderit soluta vitae. Et architecto voluptatibus dolorem.</P>
+        </div>
+
+        <div class="marketing">
+            <div class="entreprise"><img src="./Marketing/d.png" alt=""></div>
+            <div class="entreprise"><img src="../Html/Marketing/f.png" alt=""></div>
+            <div class="entreprise"><img src="./Marketing/q.png" alt=""></div>
+            <div class="entreprise"> <img src="./Marketing/s.png" alt=""></div>
+        </div>
+    <footer>
+        <div class="link">
+            <h3>QUICK LINK</h3>
+            <a href="./index.html">Acceuil</a>
+            <a href="">Produits</a>
+            <a href="">Categories</a>
+            <a href="./panier.html">Panier</a>
+        </div>
+     
+    <div class="follow">
+        <h3>FOLLOW US</h3>
+            <div class="footerImg">
+                <img src="./footerimg/facebook.png" alt="">
+                
+                <img src="./footerimg/whatsapp.png" alt="">
+            </div>
+    
+    
+    </div> 
+    <div class="info"><h3>CONTACT INFO</h3></div>    
+
+
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+-------------------------------------CSS---------------------------------------------
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+     background-color: #f1f1f1;
+     font-family: Arial, Helvetica, sans-serif;
+     height: 100vh;
+     
+} 
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: 450px;
+}
+button{
+    width: 2px auto;
+    height: 35Px;
+    border-radius: 10px;
+    border: none;
+    background-color: #41e8a2;
+    color: white;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5cqmax;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+ .search-container button {
+    background-color: #41e8a2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;}
+
+img {
+    max-width: 100%;
+}
+
+h1 a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 50px bold;
+  font-style: normal;
+  color: #1c87c9;
+  
+  
+}
+h1 a span{
+    color: #41e8a2;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
+    z-index: 1000;
+}
+
+nav a{
+    list-style: none;
+    text-decoration: none;
+    opacity: none;
+    color: #343434;
+    font-weight: 700;
+}
+nav a:hover{
+   color: #41e8a2;
+}
+nav a img{
+    width: 25px;
+    height: 25px;
+    max-width: 30px;
+    opacity: none;
+}
+
+nav h1 a{
+    color: black;
+    opacity: none;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.slider-container  p{
+    color: white;
+    position: relative;
+    top: 50px;
+
+}
+
+.slider-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #6b1212;
+    border-radius: 50px;
+    margin: 100px 0.2em 1em;
+    z-index: 1000;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 30%;
+    position:relative;
+    z-index: 1000;
+    top: 300px;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  button {
+    background-color: #41e8a2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+.mainHead{
+    display: flex;
+    justify-content: space-between;
+   padding: 20px 0px 0px 15px;
+}
+
+.mainHead button{
+    margin-right: 15px;
+}
+main .backMain{
+    margin-top: 50px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    /* width: 400px;
+    height: 400px; */
+    position: absolute;
+    z-index: 0;
+    
+}
+
+main .backMain .produits{   
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    z-index: 10;
+    position: relative;
+    flex-wrap: wrap;
+    
+    
+}
+.backMain{
+    display: flex;
+    gap: 10px;
+}
+.produits{
+    width: 150px;
+    width: 150px;
+    background-color: white;
+}
+
+.prodImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+
+.marketing{
+    width: 100%;
+    height: 500px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.marketing .entreprise{
+    width: 300px ;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.marketing .entreprise img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.mainHead {
+    margin-top: 75px;
+
+}
+.caroussel{
+    height: 600px;
+    width: 100%;
+}
+
+.carousselTxt{
+    position: relative;
+    top: 500px;
+    z-index: 100;
+    /* color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    font-weight: bold; */
+
+}
+
+
+.carousselImg{
+    max-width: 100%;
+    display: block;
+ 
+}
+
+
+
+footer{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.259);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer .link{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer .link h3{
+    text-decoration: underline ;
+}
+
+footer .link a{
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+footer .footerImg img{
+    width: 20px;
+    height: 20px;
+}
+
+.produits{
+    margin: none;
+    height: 150px;
+    width: 150px;
+}

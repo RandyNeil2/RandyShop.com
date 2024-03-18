@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  .titre1{
+    text-align: center;
+    font-size: 3.5rem;
+    
+  }
+  h1, h2 {
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #000;
+  }
+  
+ 
+  main {
+    padding: 20px;
+  }
+  
+  .produit {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  section{
+    width: 100%;
+    height: 50rem;
+    padding: 3rem;
+  }
+  
+.image{
+    height: 30rem;
+    width: 25rem;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    background-color: rgba(0,0 ,0 , 0.1);
+  }
+   
+  .image img {
+    height: 20rem;
+  }
+  
+  .description {
+    width: 50%;
+    padding-left: 20px;
+  }
+  
+  .description h2 {
+    margin-bottom: 10px;
+  }
+  
+  .description p {
+    margin-bottom: 10px;
+  }
+  
+  .description ul {
+    padding-left: 15px;
+  }
+  
+  .description .prix {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .description form {
+    margin-top: 20px;
+  }
+  
+  .description label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .description input[type="number"] {
+    width: 50px;
+    padding: 5px;
+  }
+  
+  .description input[type="submit"] {
+    background-color: #41e8a2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  
