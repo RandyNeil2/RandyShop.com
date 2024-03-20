@@ -11,6 +11,9 @@
      text-decoration: none;
      
 } 
+.body {
+  padding: 0 10% 0 10%;
+}
 
 .body nav{
     width: 100%;

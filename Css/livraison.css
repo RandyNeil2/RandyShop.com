@@ -1,0 +1,234 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+     background-color: #ECF8F6;
+     font-family: Arial, Helvetica, sans-serif;
+     height: 100vh;
+     text-decoration: none;
+     
+} 
+
+.body {
+    padding: 0 10% 0 10%;
+    height: 100%;
+}
+
+.body nav{
+    width: 100%;
+    height: 100px;
+    background-color: #18534F;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+button{
+    width: 2px auto;
+    height: 35Px;
+    border-radius: 10px;
+    border: none;
+    background-color: #41e8a2;
+    color: white;
+    cursor: pointer;
+}
+
+nav{
+    /*  */
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
+nav h1 a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 700;
+    color: white;
+}
+
+nav button a{
+    color: white;
+    font-size:  13ppx ;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+nav h1 a   span:hover{
+    color: #41e8a2;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+ .search-container button {
+    background-color: #41e8a2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .body  footer{
+        padding:5% 10% 0 10%;
+       }
+       footer {
+           background-color: #000;
+           color: #fff;
+           padding: 200px 0;
+         }
+         
+         .footer-content {
+           display: flex;
+           justify-content: space-around;
+           gap: 20px;
+         }
+         
+         .footer-column {
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+         }
+         
+         .footer-column h3 {
+           font-size: 18px;
+           margin-bottom: 10px;
+         }
+         
+         .footer-column ul {
+           list-style-type: none;
+           padding: 0;
+         }
+         
+         .footer-column ul li {
+           margin-bottom: 5px;
+         }
+         
+         .footer-column ul li a {
+           color: #fff;
+           text-decoration: none;
+         }
+         
+         .footer-column ul li a:hover {
+           color: #ccc;
+         }
+         
+         .social-media {
+           display: flex;
+           gap: 10px;
+         }
+         
+         .social-media li {
+           list-style-type: none;
+         }
+         
+         .social-media li a {
+           color: #fff;
+           font-size: 18px;
+         }
+         
+         .social-media li a:hover {
+           color: #ccc;
+         }
+         
+         /* Copyright */
+         .footer-copyright {
+           text-align: center;
+           margin-top: 20px;
+         }
+         
+         .footer-copyright p {
+           font-size: 14px;
+         }
+       
+         main .title{
+           margin-bottom: 20px;
+         }
+
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+          }
+          
+          .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+          }
+          
+          h2 {
+            text-align: center;
+            color: #333;
+          }
+          
+          form {
+            margin-top: 20px;
+          }
+          
+          label {
+            display: block;
+            margin-bottom: 5px;
+          }
+          
+          input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid;
+          }
+          
+          input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+          }
+
+          nav .search-container{
+            display: flex;
+            justify-content: center;
+             align-items: center;
+            width: 450px;
+            border: 1px solid #ccc;
+             border-radius: 5px;
+             overflow: hidden;
+          }
