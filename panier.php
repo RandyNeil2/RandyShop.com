@@ -26,11 +26,21 @@
                 // Écrire le JSON dans le fichier
                 file_put_contents('./assets/data/cart.json', $jsonData);
         
-                echo 'L\'élément a été supprimé avec succès.';
+               // echo 'L\'élément a été supprimé avec succès.';
             } else {
-                echo 'L\'élément n\'a pas été trouvé dans le tableau.';
+                //echo 'L\'élément n\'a pas été trouvé dans le tableau.';
             }
-            var_dump($cart);
+            //var_dump($cart);
+
+           
+            $totalPrice = 0;
+            
+            
+            // Parcourir le tableau $cart et additionner les quantités et les prix
+            foreach ($cart as $cartItem) {
+              $itemTotal = $cartItem['quantite'] * $cartItem['prix'];
+               $totalPrice += $itemTotal;
+              }
         
         ?>  
  
@@ -74,7 +84,8 @@
                    <div class="kartProductImg"> <img src="<?php echo $cartProduct['img'] ?>"></div>
                    <div class="suppbutton"><form method="post">
                    <div class="h3"><h3><?php echo $cartProduct['name']  ?></h3></div>
-                   <form method="post" action="panier.php"> <button type="submit" name="delete_btn" class="suppBtn">Rétirer</button></div></form>
+                   <form method="post" action="panier.php"> 
+                    <button type="submit" value=" <?php echo $cartProduct['id']; ?>"name="delete_btn" class="suppBtn">Rétirer</button></div></form>
               
 
                     <h4><?php echo $cartProduct['prix']  ?>XAF</h4>
@@ -97,9 +108,9 @@
             <div class="facture">
                 <h2>Facture</h2>
                 <div class="factureDetails">
-                    <div class="total"><h1>Total:</h1></div>
+                    <div class="total"><h1>Total:<?php echo $totalPrice ?>XAF</h1></div>
                     <div class="details">
-                        <p>Sous-Total:</p>
+                        <p>Sous-Total:<?php echo $totalPrice ?>XAF</p>
                         <p>Livraison:</p>
                         <p>Garantie:</p>
                     </div>
