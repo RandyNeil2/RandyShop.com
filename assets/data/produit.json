@@ -1,0 +1,616 @@
+[
+  {
+    "id": 101,
+    "name": "Iphone11",
+    "img": "./assets/images/Telephones/Apple_iPhone_11_128GB_Unlocked_GSM_CDMA_Smartphone_-_Black-removebg-preview.png",
+    "description": "Apple_iPhone_11_128GB_Unlocked_GSM_CDMA_Smartphone_-",
+    "price": 180000,
+    "quantity": 15
+  },
+  {
+    "id": 102,
+    "name": "Iphone14+",
+    "img": "./assets/images/Telephones/Apple_iPhone_14_128GB_Blue__eSIM____Nebraska_Furniture_Mart-removebg-preview.png",
+    "description": "Apple_iPhone_14_128GB_Blue__eSIM____Nebraska_Furniture_Mart-",
+    "price": 437000,
+    "quantity": 10
+  },
+  {
+    "id": 103,
+    "name": "Iphone14",
+    "img": "./assets/images/Telephones/Apple_iPhone_14-removebg-preview.png",
+    "description": "Apple_iPhone_14_128GB_Blue__eSIM____Nebraska_Furniture_Mart-",
+    "price": 400000,
+    "quantity": 21
+  },
+
+  {
+    "id": 104,
+    "name": "Xiaomi Redmi_Note_12",
+    "img": "./assets/images/Telephones/Celular_Xiaomi_Redmi_Note_12_128GB___6GB_RAM_Dual_Sim_TelaP_e_13MP_-_Onyx_Gray_-_Preto__1_-removebg-preview (1).png",
+    "description": "Celular_Xiaomi_Redmi_Note_12_128GB___6GB_RAM_Dual_Sim_TelaP_e_13MP_-_Onyx_Gray_-_Preto__1_",
+    "price": 115000,
+    "quantity": 23
+  },
+  {
+    "id": 105,
+    "name": "Iphone12",
+    "img": "./assets/images/Telephones/Download_premium_psd___image_of_White_Apple_iPhone_12_psd_phone_rear_view_mockup__NOVEMBER_12__2020_-_BANGKOK__THAILAND_by_Roungroat_about_iphone__iphone_mockup__iphone_back__iphone_camera__and_apple_.png",
+    "description": "_White_Apple_iPhone_12_psd_phone_rear_view_mockup__NOVEMBER_12__2020_-_BANGKOK__THAILAND",
+    "price": 270000,
+    "quantity": 17
+  },
+  {
+    "id": 106,
+    "name": "Samsung_Galaxy_A32",
+    "img": "./assets/images/Telephones/kwmobile_Case_Compatible_with_Samsung_Galaxy_A32_5G_Case_-_TPU_Silicone_Phone_Cover_with_Soft_Finish_-_Antique_Stone-removebg-preview.png",
+    "description": "_White_Apple_iPhone_12_psd_phone_rear_view_mockup__NOVEMBER_12__2020_-_BANGKOK__THAILAND",
+    "price": 246000,
+    "quantity": 25
+  },
+  {
+    "id": 107,
+    "name": "_Poco_X2",
+    "img": "./assets/images/Latest_news_about_Poco_X2-_Full_Specification__Is_it_worth_it_for_the_price_-removebg-preview (1).png",
+    "description": "Latest_news_about_Poco_X2-_Full_Specification__Is_it_worth_it_for_the_price_-",
+    "price": 204000,
+    "quantity": 50
+  },
+  {
+    "id": 108,
+    "name": "Xiaomi_Poco_M3_",
+    "img": "/assets/images/Xiaomi_Poco_M3_Specs_-_Mobileogram-removebg-preview (1).png",
+    "description": "Xiaomi_Poco_M3_Specs_-_Mobileogram-removebg-preview (1)",
+    "price": 102000,
+    "quantity": 36
+  },
+  {
+    "id": 109,
+    "name": "Tecno_Pova_5",
+    "img": "./assets/images/Tecno_Pova_5_Price_in_Bangladesh_2023__Specs___Review-removebg-preview.png",
+    "description": "Tecno_Pova_5_Price_in_Bangladesh_2023__Specs_.png",
+    "price": 134000,
+    "quantity": 29
+  },
+  {
+    "id": 110,
+    "name": "Xiaomi_Redmi_12",
+    "img": "./assets/images/Xiaomi_Xiaomi_Redmi_12_Midnight_Black_6_79__8Gb_256Gb_Dual_Sim_Smartphone_Xiaomi_Xiaomi_Redmi_12_Midnight_Black_6-removebg-preview (1).png",
+    "description": "Xiaomi_Xiaomi_Redmi_12_Midnight_Black_6_79__8Gb_256Gb_Dual_Sim_Smartphone_Xiaomi_Xiaomi_Redmi_12_Midnight_Black_6",
+    "price": 190000,
+    "quantity": 33
+  },
+  {
+    "id": 111,
+    "name": "Samsung_Galaxy_A24",
+    "img": "./assets/images/Samsung_Galaxy_A24_4G_128GB_Storage__4GB_RAM__Dual_SIM_-_Light_Green_-_Unlocked_-_International_Model_-_Used_-_Like_New-removebg-preview.png",
+    "description": "Samsung_Galaxy_A24_4G_128GB_Storage__4GB_RAM__Dual_SIM_-_Light_Green_-_Unlocked_-_International_Model_-_Used_-_Like_New",
+    "price": 244000,
+    "quantity": 54
+  },
+  {
+    "id": 201,
+    "name": "MacKook Air 2021",
+    "img": "./assets/images/pc/istockphoto-1074074468-1024x1024__1_-removebg-preview.png",
+    "description": "MacKook Air 2021_Blanc",
+    "price": 729000,
+    "quantity": 38
+  },
+  {
+    "id": 202,
+    "name": "WhitePc",
+    "img": "./assets/images/pc/istockphoto-178083720-1024x1024-removebg-preview.png",
+    "description": "Pc Blanc Nul,accessible à tous",
+    "price": 57000,
+    "quantity": 71
+  },
+  {
+    "id": 203,
+    "name": "PCPartPicker__Ryzen_5_3600X",
+    "img": "./assets/images/pc/Check_out_sorokyl_s_completed_build_on_PCPartPicker__Ryzen_5_3600X_3_8_GHz_6-Core__GeForce_RTX_3080_10_GB_F____Computer_gaming_room__Computer_setup__Gaming_pc_build-removebg-preview.png",
+    "description": "CPartPicker__Ryzen_5_3600X_3_8_GHz_6-Core__GeForce_RTX_3080_10_GB_F",
+    "price": 570000,
+    "quantity": 44
+  },
+
+  {
+    "id": 204,
+    "name": "HP_15",
+    "img": "./assets/images/pc/assets/images/pc/HP_15_15s-gy0003AU_Laptop_Price_in_India___AMD_3020e___4GB___1TB__-removebg-preview.png",
+    "description": "HP_15_15s-gy0003AU_Laptop_Price_in_India___AMD_3020e___4GB___1TB__",
+    "price": 390000,
+    "quantity": 90
+  },
+
+  {
+    "id": 205,
+    "name": "Dell_Inspiron_3558",
+    "img": "./assets/images/pc/Review_Dell_Inspiron_3558___un_laptop_cu_o_configurație_mid-range_ieftin_-_Gadget-Review_ro-removebg-preview.png",
+    "description": "_Dell_Inspiron_3558___un_laptop_cu_o_configurație_mid-range_ieftin_-_Gadget",
+    "price": 7000,
+    "quantity": 33
+  },
+
+  {
+    "id": 206,
+    "name": "_1000_BUDGET_PC",
+    "img": "./assets/images/pc/_1000_BUDGET_PC_Build_for_Gaming_NOW___October_2021-removebg-preview.png",
+    "description": "1000_BUDGET_PC_Build_for_Gaming_NOW___October_2021",
+    "price": 7000,
+    "quantity": 41
+  },
+
+  {
+    "id": 301,
+    "name": "GameboyBoy Advance",
+    "img": "./assets/images/Consoles/GBA.png",
+    "description": "la meileure console Nintendo de sa génération, couleur violette,9999jeux integré",
+    "price": 7000,
+    "quantity": 16
+  },
+
+  {
+    "id": 302,
+    "name": "GameBoy_Color",
+    "img": "./assets/images/Consoles/GBC.png",
+    "description": "GBC co",
+    "price": 7000,
+    "quantity": 10
+  },
+
+  {
+    "id": 303,
+    "name": "Nintendo_Switch_Lite_Pro",
+    "img": "./assets/images/Consoles/istockphoto-1388772975-1024x1024-removebg-preview.png",
+    "description": "Couleur Blanche 14'",
+    "price": 7000,
+    "quantity": 50
+  },
+
+  {
+    "id": 304,
+    "name": "PlayStation_5",
+    "img": "/assets/images/Consoles/PlayStation_5-Konsole-removebg-preview.png",
+    "description": "IO Throughput de 5,5 GB/s brute et de 8 à 9 GB/s compressé. Résolution 8K et option 4K. Lecteur Blu-ray 4K. Rétrocompatibilité PS4",
+    "price": 7000,
+    "quantity": 32
+  },
+
+  {
+    "id": 305,
+    "name": "Nintendo_switch",
+    "img": "./assets/images/Consoles/Nintendo_switch-removebg-preview.png",
+    "description": "Processeur Quad-Core ARM Cortex-A57. Chipset graphique Tegra X1. Ecran tactile de 6.2 pouces à résolution HD 720 x 1280 pixels.",
+    "price": 7000,
+    "quantity": 54
+  },
+
+  {
+    "id": 306,
+    "name": "Playstation_3",
+    "img": "./assets/images/Consoles/Ps3.png",
+    "description": "c'est un lecteur Blu-ray évolutif doublé d'une console de jeu HD et d'une passerelle multimédia sans fil",
+    "price": 7000,
+    "quantity": 17
+  },
+
+  {
+    "id": 307,
+    "name": "Playstaton_4",
+    "img": "./assets/images/Consoles/Ps4.png",
+    "description": "Mémoire : 8 Go GDDR5. Puissance indicative : 1.84 TFLOP. Stockage : Disque dur de 1 To amovible & lecteur Blu-Ray. Connectivité : Ethernet Gigabit / Wi-Fi 802.11 a/b/g/n/ac / Bluetooth 4.0",
+    "price": 7000,
+    "quantity": 63
+  },
+
+  {
+    "id": 308,
+    "name": "Xbox360",
+    "img": "./assets/images/Consoles/Xbox.png",
+    "description": " La Xbox 360 s'appuie sur un 3 processeurs IBM Power PC cadencés à 3,2 GHz, un processeur graphique ATI 500 MHz, une mémoire de 512 Mo GDDR3 RAM, un disque dur de 20 Go et un lecteur DVD.",
+    "price": 7000,
+    "quantity": 21
+  },
+
+  {
+    "id": 309,
+    "name": "WII",
+    "img": "./assets/images/Consoles/_WEB__Nintendo_Wii_Improves_Stroke_Patients__Functionality__Balance_and_Activities_of_Daily_Living-removebg-preview.png",
+    "description":"WEB__Nintendo_Wii_Improves_Stroke_Patients__Functionality__Balance_and_Activities_of_Daily_Living-removebg-preview",
+    "price": 7000,
+    "quantity": 21
+  },
+
+
+  {
+    "id": 310,
+    "name": "Console de Jeu Portable multiFonction",
+    "img": "./assets/images/Consoles/Console_De_Jeu_Portable__Console_Multifonction_RG280M_Console_De_Jeu_Portable_Écran_IPS_2_8_P___-removebg-preview.png",
+    "description":"Assemble les jeux de plusieurs consoles comme Gameboy,PSP,N64,Snes",
+    "price": 7000,
+    "quantity": 21
+  },
+
+
+  {
+    "id": 311,
+    "name": "Playstation_3 Slim",
+    "img": "./assets/images/Consoles/84d256c3-04a3-403f-97b9-d67dbafc0dbd-removebg-preview.png",
+    "description":"WEB__Nintendo_Wii_Improves_Stroke_Patients__Functionality__Balance_and_Activities_of_Daily_Living-removebg-preview",
+    "price": 7000,
+    "quantity": 21
+  },
+
+  {
+    "id": 312,
+    "name": "Playstation_Portable Sony",
+    "img": "./assets/images/Consoles/Comment_dessiner_la_PSP_de_Sony_avec_Photoshop_-_Tuto_Photoshop_les_meilleurs_tutoriaux_photoshop_gratuit-removebg-preview.png",
+    "description":"Mémoire : 8 Go GDDR5. Puissance indicative : 1.84 TFLOP. Stockage : Disque dur de 1 To amovible & lecteur Blu-Ray. Connectivité : Ethernet Gigabit / Wi-Fi 802.11 a/b/g/n/ac / Bluetooth 4.0",
+    "price": 7000,
+    "quantity": 21
+  },
+
+
+  {
+    "id": 313,
+    "name": "Playstation_3 Slim",
+    "img": "./assets/images/Consoles/84d256c3-04a3-403f-97b9-d67dbafc0dbd-removebg-preview.png",
+    "description":"WEB__Nintendo_Wii_Improves_Stroke_Patients__Functionality__Balance_and_Activities_of_Daily_Living-removebg-preview",
+    "price": 7000,
+    "quantity": 21
+  },
+
+  {
+    "id": 314,
+    "name": "Consoles_Gamecube_occasion_",
+    "img": "./assets/images/Consoles/Consoles_Gamecube_occasion_-_Retro_Game_Place-removebg-preview.png",
+    "description":"Producteur : IBM · Base de noyau : Power 750CXe 0,18 µm technologie cuivre · Fréquence de base : 485 MHz · Puissance de calcul : 1 125 Dmips (Dhrystone 2.1)",
+    "price": 7000,
+    "quantity": 21
+  },
+
+  {
+    "id": 315,
+    "name": "Consoles_De_Jeux_Portable__Console_de_Jeu_Retro",
+    "img": "./assets/images/Consoles/Elle_-_Consoles_De_Jeux_Portable__Console_de_Jeu_Retro__avec_400_jeux_classiques_Écran_couleur_Prise_en_charge_Deux_joueurs_Chargement_USB__Grand-removebg-preview.png",
+    "description":"Elle_-_Consoles_De_Jeux_Portable__Console_de_Jeu_Retro__avec_400_jeux_classiques_Écran_couleur_Prise_en_charge_Deux_joueurs_Chargement_USB__Grand",
+    "price": 7000,
+    "quantity": 21
+  },
+
+
+  {
+    "id": 316,
+    "name": "Gujugm_Console_de_Jeu_Portable_RG503",
+    "img": "./assets/images/Consoles/Gujugm_Console_de_Jeu_Portable_RG503_-_Console_d_émulateur_de_Console_de_Jeu_Portable___Conso___-removebg-preview.png",
+    "description":"Gujugm_Console_de_Jeu_Portable_RG503_-_Console_d_émulateur_de_Console_de_Jeu_Portable___Conso___-removebg-preview.png",
+    "price": 7000,
+    "quantity": 21
+  },
+
+
+  {
+    "id": 317,
+    "name": "Nintendo_Switch",
+    "img": "./assets/images/Consoles/Nintendo_Switch___l_abonnement_en_ligne_sera_moins_cher_que_sur_PlayStation_et_Xbox-removebg-preview.png",
+    "description":" les caractéristiques par défaut permettent seulement 32 Go d'espace de stockage ou 64 Go pour la Nintendo Switch OLED",
+    "price": 7000,
+    "quantity": 21
+  },
+
+
+  {
+    "id": 318,
+    "name": "PlayStation_5",
+    "img": "./assets/images/Consoles/PlayStation_5-Konsole-removebg-preview.png",
+    "description":"La console est équipée d'un GPU AMD RDNA 2 d'une puissance de 10,28 TFLOPS ainsi que d'un CPU AMD Ryzen gravé en 7 nm. Nous trouvons également 16 Go de RAM en GDDR6 et un SSD de 825 Go",
+    "price": 7000,
+    "quantity": 21
+  },
+
+  {
+    "id": 319,
+    "name": "Restored_Microsoft_Xbox_One_",
+    "img": "./assets/images/Consoles/Restored_Microsoft_Xbox_One_500gb_Original_Console_with_Controller_and_Cables__Refurbished___Black-removebg-preview.png",
+    "description":"Restored_Microsoft_Xbox_One_500gb_Original_Console_with_Controller_and_Cables__Refurbished___Black",
+    "price": 7000,
+    "quantity": 21
+  },
+
+
+  {
+    "id": 320,
+    "name": "Teckey_Console_de_Jeu_Portable_-_Consoles_Multifonctions_",
+    "img": "./assets/images/Consoles/Teckey_Console_de_Jeu_Portable_-_Consoles_Multifonctions_à_écran_HD_de_4_95_Pouces_-_Consoles___-removebg-preview.png",
+    "description":"Teckey_Console_de_Jeu_Portable_-_Consoles_Multifonctions_à_écran_HD_de_4_95_Pouces_-_Consoles",
+    "price": 7000,
+    "quantity": 21
+  },
+
+
+
+  {
+    "id": 321,
+    "name": "X6_Handheld_Game_Player_",
+    "img": "./assets/images/Consoles/X6_Handheld_Game_Player_from_BOYHOM-removebg-preview.png",
+    "description":"X6_Handheld_Game_Player_from_BOYHOM",
+    "price": 7000,
+    "quantity": 21
+  },
+
+
+
+  {
+    "id": 322,
+    "name": "Xbox_360_E",
+    "img": "./assets/images/Consoles/Xbox_360_E_4GB_Console-removebg-preview.png",
+    "description":"Xbox_360_E_4GB_Console-",
+    "price": 7000,
+    "quantity": 21
+  },
+
+  {
+    "id": 323,
+    "name": "X12_Plus_7_Pouces_Console_De_Jeux_Video_Construit_En_1000_Jeux_16Gb_Handheld_Double_Joystick_Controller",
+    "img": "./assets/images/Consoles/X12_Plus_7_Pouces_Console_De_Jeux_Video_Construit_En_1000_Jeux_16Gb_Handheld_Double_Joystick_Controleur_De_Jeu_Spupport_Av_Sortie_Tf_Music_Card_E-Book-removebg-preview.png",
+    "description":"X12_Plus_7_Pouces_Console_De_Jeux_Video_Construit_En_1000_Jeux_16Gb_Handheld_Double_Joystick_Controleur_De_Jeu_Spupport_Av_Sortie_Tf_Music_Card_E-Book-",
+    "price": 7000,
+    "quantity": 21
+  },
+
+
+
+  
+
+
+  {
+    "id": 401,
+    "name": "Smart_Watch_Apple",
+    "img": "./assets/images/accessoires/W1.png",
+    "description": "processeur, mémoire interne et RAM , je capteurs intégrés , par exemple GPS, fréquence cardiaque et oxymètre de pouls et le type de connectivité Wi-Fi ou Bluetooth ",
+    "price": 7000,
+    "quantity": 36
+  },
+
+  {
+    "id": 402,
+    "name": "Smart_Watch_Samsung",
+    "img": "./assets/images/accessoires/W2.png",
+    "description": "le design et le type d'écran,l autonomie en pleine utilisation et en veille",
+    "price": 7000,
+    "quantity": 57
+  },
+
+  {
+    "id": 403,
+    "name": "Smart_Watch_Docomo",
+    "img": "./assets/images/accessoires/W3.png",
+    "description": "Autonome_Alimentation_BatterieIndicateur_d_autonomie_Oui",
+    "price": 7000,
+    "quantity": 26
+  },
+
+  {
+    "id": 404,
+    "name": "2Smart_Watches",
+    "img": "./assets/images/accessoires/W-W.png",
+    "description": "Autonome_Alimentation_Batterie",
+    "price": 7000,
+    "quantity": 13
+  },
+
+  {
+    "id": 405,
+    "name": "Smart_Watch_Huawei",
+    "img": "./assets/images/accessoires/W4.png",
+    "description": "l autonomie en pleine utilisation et en veille",
+    "price": 7000,
+    "quantity": 15
+  },
+
+  {
+    "id": 406,
+    "name": "Casque_RedRiot",
+    "img": "./assets/images/accessoires/C1.png",
+    "description": "La portée de transmission est de 10 mètres et il est équipé d'une prise en charge de la connexion Bluetooth, d'une entrée carte SD et d'une entrée jack 3,5 mm La conception enveloppante réduit les fuites sonores et offre une excellente qualité sonore.",
+    "price": 7000,
+    "quantity": 32
+  },
+
+  {
+    "id": 407,
+    "name": "AirPods_N63",
+    "img": "./assets/images/accessoires/AP.png",
+    "description": "La portée de transmission est de 10 mètres et il est équipé d'une prise en charge de la connexion Bluetooth, d'une entrée carte SD et d'une entrée jack 3,5 mm La conception enveloppante réduit les fuites sonores et offre une excellente qualité sonore.",
+    "price": 7000,
+    "quantity": 22
+  },
+
+  {
+    "id": 408,
+    "name": "Casque_Confort",
+    "img": "./assets/images/accessoires/C2.png",
+    "description": "La portée de transmission est de 10 mètres et il est équipé d'une prise en charge de la connexion Bluetooth",
+    "price": 7000,
+    "quantity": 45
+  },
+
+  {
+    "id": 409,
+    "name": "Casque_BlackHouse",
+    "img": "./assets/images/accessoires/C3.png",
+    "description": " il est équipé d'une prise en charge de la connexion Bluetooth,",
+    "price": 7000,
+    "quantity": 75
+  },
+
+  {
+    "id": 410,
+    "name": "Pochette_Nintendo_Ds",
+    "img": "./assets/images/accessoires/pochetteNs.png",
+    "description": "Protection tres solide en silicone ",
+    "price": 7000,
+    "quantity": 77
+  },
+
+  {
+    "id": 411,
+    "name": "Smart Hander",
+    "img": "./assets/images/accessoires/16f84911-2ccb-4852-8ce1-d1c0e7996cdf-removebg-preview.png",
+    "description": "Protection tres solide en silicone ",
+    "price": 70000,
+    "quantity": 77
+  },
+
+
+
+  {
+    "id": 412,
+    "name": "34_Computer_Accessories",
+    "img": "./assets/images/accessoires/34_Computer_Accessories_You_Probably_Didn_t_Know_You_Needed__1_-removebg-preview.png",
+    "description": "34_Computer_Accessories_You_Probably_Didn_t_Know_You_Needed__1_ ",
+    "price": 7000,
+    "quantity": 77
+  },
+
+
+
+
+  {
+    "id": 413,
+    "name": "Multi-USB",
+    "img": "./assets/images/accessoires/34_Computer_Accessories_You_Probably_Didn_t_Know_You_Needed-removebg-preview.png",
+    "description": "Protection tres solide en silicone ",
+    "price": 7000,
+    "quantity": 77
+  },
+
+  {
+    "id": 414,
+    "name": "Casque_Gaming_",
+    "img": "./assets/images/accessoires/Casque_Gaming_sans_fil_HyperX_Cloud_Stinger_Core_Pour_PS4_Blanc-removebg-preview.png",
+    "description": "Casque_Gaming_sans_fil_HyperX_Cloud_Stinger_Core_Pour_PS4_Blanc-removebg-preview.png",
+    "price": 7000,
+    "quantity": 77
+  },
+
+
+  {
+    "id": 415,
+    "name": "Full_Motion_TV_Monitor_Wall_Mount_Bracket_Articulating_Arm",
+    "img": "./assets/images/accessoires/Full_Motion_TV_Monitor_Wall_Mount_Bracket_Articulating_Arms_Swivels_Tilts_Extension_Rotation-removebg-preview.png",
+    "description": "Full_Motion_TV_Monitor_Wall_Mount_Bracket_Articulating_Arms_Swivels_Tilts_Extension_Rotation- ",
+    "price": 7000,
+    "quantity": 77
+  },
+
+
+  {
+    "id": 416,
+    "name": "Generic_Hisense_En2a27_Smart_TV_Remote_Control",
+    "img": "./assets/images/accessoires/Generic_Hisense_En2a27_Smart_TV_Remote_Control__Black-removebg-preview.png",
+    "description": "Generic_Hisense_En2a27_Smart_TV_Remote_Control__Black-removebg-preview.png ",
+    "price": 7000,
+    "quantity": 77
+  },
+
+
+
+  {
+    "id": 417,
+    "name": "Meuble_TV_gamer_Hack_-_L163_x_H48_x_P45",
+    "img": "./assets/images/accessoires/Meuble_TV_gamer_Hack_-_L163_x_H48_x_P45_cm-removebg-preview.png",
+    "description": "Meuble_TV_gamer_Hack_-_L163_x_H48_x_P45_cm-removebg-preview.png",
+    "price": 7000,
+    "quantity": 77
+  },
+
+  {
+    "id": 418,
+    "name": "Shure_MVL_A_-_Micrófo",
+    "img": "./assets/images/accessoires/Shure_MVL_A_-_Micrófono_de_Solapa_de_Condensador__grabación_Digital_de_Voz_de_Calidad-removebg-preview (2).png",
+    "description": "Shure_MVL_A_-_Micrófono_de_Solapa_de_Condensador__grabación_Digital_de_Voz_de_Calidad-removebg-preview (2).png",
+    "price": 7000,
+    "quantity": 77
+  },
+
+  {
+    "id": 419,
+    "name": "Télécommande_Smart_TV_4K_pour_téléviseur_Samsung_BN59",
+    "img": "./assets/images/accessoires/Télécommande_Smart_TV_4K_pour_téléviseur_Samsung_BN59-01259B_BN59-01259E-removebg-preview.png",
+    "description": "Télécommande_Smart_TV_4K_pour_téléviseur_Samsung_BN59-01259B_BN59-01259E-removebg-preview.png",
+    "price": 7000,
+    "quantity": 77
+  },
+
+
+  {
+    "id": 501,
+    "name": "Sims2_GBA",
+    "img": "./assets/images/Jeux/SimsGBA.jpg",
+    "description": "Jeu Retro de vie",
+    "price": 7000,
+    "quantity": 14
+  },
+
+  {
+    "id": 502,
+    "name": "FC24_Ps5",
+    "img": "./assets/images/Jeux/FC24_Ps5.jpg",
+    "description": "Plongez dans le monde du Foot, plusque realiste",
+    "price": 7000,
+    "quantity": 57
+  },
+  {
+    "id": 503,
+    "name": "BomberMan_R2",
+    "img": "./assets/images/Jeux/BBM_NS.jpg",
+    "description": "Tres bon Jeuu Coop Local et distant ,jeu Explosif! ",
+    "price": 7000,
+    "quantity": 34
+  },
+
+  {
+    "id": 504,
+    "name": "Crew_Xbox",
+    "img": "./assets/images/Jeux/Crew_Xbox360.jpg",
+    "description": " Jeu de tir",
+    "price": 7000,
+    "quantity": 65
+  },
+
+  {
+    "id": 505,
+    "name": "Super_Mario_3D_Word",
+    "img": "./assets/images/Jeux/Mario_NS.jpg",
+    "description": "Tres bon Jeuu Coop Local et distant",
+    "price": 7000,
+    "quantity": 15
+  },
+
+  {
+    "id": 506,
+    "name": "FinalFantasy_Nintendo_Switch",
+    "img": "./assets/images/Jeux/FinalFantasy_Ns.jpg",
+    "description": "Univers fantaisique, graphiste Soft ",
+    "price": 7000,
+    "quantity": 41
+  },
+  {
+    "id": 507,
+    "name": "RedDeadRedemption_Xbox",
+    "img": "./assets/images/Jeux/RDR_Xbox.jpg",
+    "description": "Jeu d'action et hoot 3d",
+    "price": 7000,
+    "quantity": 21
+  },
+
+  {
+    "id": 508,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/Mario_GB.jpg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  }
+]
