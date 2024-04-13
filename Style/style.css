@@ -1212,7 +1212,7 @@ overflow-wrap: break-word;}
  }
 
 
- .kartProducts h4{
+ .kartProducts .h4{
   margin-top: 20px;
   font-weight: bolder;
  }
@@ -1378,6 +1378,7 @@ overflow-wrap: break-word;}
   display: flex;
   align-items: center;
   width: auto;
+  
 }
 
 .quantite-form label {

@@ -42,6 +42,23 @@
                $totalPrice += $itemTotal;
               }
         
+              
+              foreach ($cart as $key => $cartItem) {
+                
+                // Gérer l'incrémentation et la décrémentation de la quantité
+                if (isset($_POST['increment_' . $key])) {
+                    $cart[$key]['quantite']++;
+                    $qte = $cart[$key]['quantite'];
+                } elseif (isset($_POST['decrement_' . $key])) {
+                    if ($cart[$key]['quantite'] > 1) {
+                        $cart[$key]['quantite']--;
+                        $qte = $cart[$key]['quantite'];
+                    }
+                } else {
+                    $qte = $cartItem['quantite'];
+                }
+            }
+            
         ?>  
  
 
@@ -88,14 +105,17 @@
                     <button type="submit" value=" <?php echo $cartProduct['id']; ?>"name="delete_btn" class="suppBtn">Rétirer</button></div></form>
               
 
-                    <h4><?php echo $cartProduct['prix']  ?>XAF</h4>
+                    <h4 class="h4"><?php echo $cartProduct['prix']  ?>XAF </h4>
                     
         <div class="quantite-form">
           <label for="quantite">Quantité: <div>
-           <button type="button" onclick="decrementer()">-</button>
-            <input  id="quantite" name="quantite" value="<?php echo $cartProduct['quantite']  ?>" min="1">
-             <button type="button" onclick="incrementer()">+</button>
-          </div></label>
+             <form method="post" action="panier.php">
+           <button type="submit" name="increment_" >-</button>
+            <input  id="quantite" name="quantite" value="<?php echo $qte?>" min="1">
+             <button type="submit" name="decrement_">+</button>
+            </form>
+          </div></label> 
+          
        
           </div>
                      
