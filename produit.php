@@ -133,7 +133,7 @@ $object_count = count($cartNum);
             </div>
           </div>
 
-          <div> <a href="./panier.php"> <img src="./assets/images/shopping-basket.png"kart></a>
+          <div class="refKart"> <a href="./panier.php"> <img src="./assets/images/shopping-basket.png"kart></a>
          <div class="numberKart"><?php echo $object_count?></div>
         
         

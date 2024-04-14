@@ -530,12 +530,20 @@ nav .logoPres h1 a   span:hover{
           
         }
 
-        .numberKart{
+
+        .refKart{
+          display: flex;
+
+        }
+
+        .refKart .numberKart{
           width: 20px;
           height: 20px;
           border-radius: 50%;
           background-color: white;
           color: #218838;
+          position: relative;
+          top: 15px;
         }
 
 
