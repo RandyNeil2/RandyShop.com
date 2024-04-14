@@ -530,6 +530,14 @@ nav .logoPres h1 a   span:hover{
           
         }
 
+        .numberKart{
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: white;
+          color: #218838;
+        }
+
 
         .pub2{
           width: 80%;

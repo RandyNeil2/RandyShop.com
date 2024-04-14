@@ -22,6 +22,22 @@
         //   if($cat->name == $item)
         //   array_push($cats, $cat);
         
+
+        $Jsondata = file_get_contents('./assets/data/cart.json');
+  $cartNum = json_decode($Jsondata,true);
+
+
+  if (!is_array($cartNum) || empty($cartNum)) {
+    $object_count=0;
+}else{
+
+
+$object_count = count($cartNum);
+}
+
+
+
+
         $index = array_search($id, array_column($produits, 'id'));
         $product = $produits[$index];
         $work = false;
@@ -117,7 +133,11 @@
             </div>
           </div>
 
-          <a href="./panier.php"> <img src="./assets/images/shopping-basket.png"kart></a>
+          <div> <a href="./panier.php"> <img src="./assets/images/shopping-basket.png"kart></a>
+         <div class="numberKart"><?php echo $object_count?></div>
+        
+        
+        </div>
     </nav>
 
 

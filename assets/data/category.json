@@ -43,10 +43,20 @@
     
     {
         "id":6,
-        "name":"nounous",
+        "name":"Modem",
         "img":"/assets/images/s",
         "description":"Des jeux pour vos consoles",
         "listdeproduits":[1,2,3]
+    },
+
+
+    {
+        "id":7,
+        "name":"Tablettes Graphiques",
+        "img":"/assets/images/s",
+        "description":"Des jeux pour vos consoles",
+        "listdeproduits":[1,2]
     }
+    
     
 ]

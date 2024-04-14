@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="./Style/style.css">
     
   <?php  $jsonCartData = file_get_contents("./assets/data/cart.json"); 
-          $cart = json_decode($jsonCartData, true);  
+          $cart = json_decode($jsonCartData, true); 
+          
+          
+  
+
+
+  if (!is_array($cart) || empty($cart)) {
+    $object_count=0;
+}else{
+
+
+$object_count = count($cart);
+}
 
           if (isset($_POST['delete_btn'])) {
              $elementId = $_POST['delete_btn'];
@@ -86,7 +98,11 @@
                 </div>
               </div>
     
-              <a href="./panier.php"> <img src="./assets/images/shopping-basket.png"kart></a>
+              <div> <a href="./panier.php"> <img src="./assets/images/shopping-basket.png"kart></a>
+         <div class="numberKart"><?php echo $object_count?></div>
+        
+        
+        </div>
         </nav>
 
   

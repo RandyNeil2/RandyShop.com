@@ -8,6 +8,25 @@
 </head>
 <?php $jsondata = file_get_contents('./assets/data/category.json');
   $categories = json_decode($jsondata);
+
+  
+
+
+  
+$Jsondata = file_get_contents('./assets/data/cart.json');
+  $cartNum = json_decode($Jsondata,true);
+
+
+  if (!is_array($cartNum) || empty($cartNum)) {
+    $object_count=0;
+}else{
+
+
+$object_count = count($cartNum);
+
+
+}
+
   ?>
 <body>
  
@@ -32,7 +51,11 @@
             </div>
           </div>
 
-          <a href="./panier.php"> <img src="./assets/images/shopping-basket.png"kart></a>
+         <div> <a href="./panier.php"> <img src="./assets/images/shopping-basket.png"kart></a>
+         <div class="numberKart"><?php echo $object_count?></div>
+        
+        
+        </div>
     </nav>
 
 
