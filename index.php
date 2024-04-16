@@ -25,6 +25,8 @@ $Jsondata = file_get_contents('./assets/data/cart.json');
 $object_count = count($cartNum);
 
 
+
+
 }
 
   ?>
@@ -111,6 +113,10 @@ $object_count = count($cartNum);
 
           <div class="grid-container">
             <!-- <button class="left-btn" onclick="scrollContent('left')">←</button> -->
+
+          
+       
+
             <a href="./produit.php"><div class="product"> 
               <img class="product-img" src="" alt="">
              <div class='descriptionProd'><h3>Nom du Produit</h3>

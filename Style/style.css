@@ -494,7 +494,8 @@ nav .logoPres h1 a   span:hover{
         }
         
         .product img {
-          width: 100%; /* Pour s'assurer que les images s'adaptent correctement */
+          width: 150px;
+          height: 190px; /* Pour s'assurer que les images s'adaptent correctement */
         }
 
 
@@ -541,9 +542,14 @@ nav .logoPres h1 a   span:hover{
           height: 20px;
           border-radius: 50%;
           background-color: white;
-          color: #218838;
+          color: #0c4d1a;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           position: relative;
-          top: 15px;
+          bottom: 10px;
+          right: 5px;
         }
 
 
@@ -562,6 +568,25 @@ nav .logoPres h1 a   span:hover{
       
 
         }
+
+
+        .gridContainer a .product .product-img{
+          height: 60%;
+        }
+
+
+        .gridContainer a .product h3{
+          font-weight: 800;
+        }
+
+
+        .gridContainer a .product h4{
+          font-weight: 600;
+        }
+
+
+
+
 
         .gridContainer{
           grid-template-columns: repeat(3, 1fr);
@@ -907,7 +932,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .containerLogin button:hover {
-  background-color: #0056b3;
+  background-color: #0ba062;
 }
 
 .bodylogin p{
@@ -1359,7 +1384,7 @@ overflow-wrap: break-word;}
 
 
 .bodyCheckout button:hover {
-  background-color: #0056b3;
+  background-color: #00b345;
 }
 
 
@@ -1420,3 +1445,110 @@ overflow-wrap: break-word;}
   width: 30px;
   padding: 5px;
 }
+
+/* Styles généraux */
+.bodyCommande {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles de la page de finalisation de commande */
+.bodyCommande .order-confirmation-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.bodyCommande header, main, footer {
+  margin-bottom: 20px;
+}
+
+.bodyCommande h1,.bodyCommande h2 {
+  text-align: center;
+}
+
+.bodyCommande table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bodyCommande th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.bodyCommande th {
+  background-color: #f2f2f2;
+}
+
+.bodyCommande .totale {
+  text-align: right;
+  font-weight: bold;
+}
+
+.bodyCommande .next-steps {
+  text-align: center;
+}
+
+/* Styles du formulaire de commande */
+.bodyCommande .order-form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bodyCommande header, form {
+  margin-bottom: 20px;
+}
+
+.bodyCommande h1 {
+  text-align: center;
+}
+
+.bodyCommande .form-group {
+  margin-bottom: 15px;
+}
+
+.bodyCommande label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.bodyCommande input,.bodyCommande textarea,.bodyCommande select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8a8a8a;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.bodyCommande button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bodyCommande button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.order-details p span{
+  font-weight: 600;
+  color:#0c4d1a;
+}
+
+
+

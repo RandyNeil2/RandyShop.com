@@ -51,7 +51,7 @@
   {
     "id": 107,
     "name": "_Poco_X2",
-    "img": "./assets/images/Latest_news_about_Poco_X2-_Full_Specification__Is_it_worth_it_for_the_price_-removebg-preview (1).png",
+    "img": "./assets/images/Telephones/Latest_news_about_Poco_X2-_Full_Specification__Is_it_worth_it_for_the_price_-removebg-preview (1).png",
     "description": "Latest_news_about_Poco_X2-_Full_Specification__Is_it_worth_it_for_the_price_-",
     "price": 204000,
     "quantity": 50
@@ -59,7 +59,7 @@
   {
     "id": 108,
     "name": "Xiaomi_Poco_M3_",
-    "img": "/assets/images/Xiaomi_Poco_M3_Specs_-_Mobileogram-removebg-preview (1).png",
+    "img": "./assets/images/Telephones/Xiaomi_Poco_M3_Specs_-_Mobileogram-removebg-preview (1).png",
     "description": "Xiaomi_Poco_M3_Specs_-_Mobileogram-removebg-preview (1)",
     "price": 102000,
     "quantity": 36
@@ -67,7 +67,7 @@
   {
     "id": 109,
     "name": "Tecno_Pova_5",
-    "img": "./assets/images/Tecno_Pova_5_Price_in_Bangladesh_2023__Specs___Review-removebg-preview.png",
+    "img": "./assets/images/Telephones/Tecno_Pova_5_Price_in_Bangladesh_2023__Specs___Review-removebg-preview.png",
     "description": "Tecno_Pova_5_Price_in_Bangladesh_2023__Specs_.png",
     "price": 134000,
     "quantity": 29
@@ -75,7 +75,7 @@
   {
     "id": 110,
     "name": "Xiaomi_Redmi_12",
-    "img": "./assets/images/Xiaomi_Xiaomi_Redmi_12_Midnight_Black_6_79__8Gb_256Gb_Dual_Sim_Smartphone_Xiaomi_Xiaomi_Redmi_12_Midnight_Black_6-removebg-preview (1).png",
+    "img": "./assets/images/Telephones/Xiaomi_Xiaomi_Redmi_12_Midnight_Black_6_79__8Gb_256Gb_Dual_Sim_Smartphone_Xiaomi_Xiaomi_Redmi_12_Midnight_Black_6-removebg-preview (1).png",
     "description": "Xiaomi_Xiaomi_Redmi_12_Midnight_Black_6_79__8Gb_256Gb_Dual_Sim_Smartphone_Xiaomi_Xiaomi_Redmi_12_Midnight_Black_6",
     "price": 190000,
     "quantity": 33
@@ -83,7 +83,7 @@
   {
     "id": 111,
     "name": "Samsung_Galaxy_A24",
-    "img": "./assets/images/Samsung_Galaxy_A24_4G_128GB_Storage__4GB_RAM__Dual_SIM_-_Light_Green_-_Unlocked_-_International_Model_-_Used_-_Like_New-removebg-preview.png",
+    "img": "./assets/images/Telephones/Samsung_Galaxy_A24_4G_128GB_Storage__4GB_RAM__Dual_SIM_-_Light_Green_-_Unlocked_-_International_Model_-_Used_-_Like_New-removebg-preview.png",
     "description": "Samsung_Galaxy_A24_4G_128GB_Storage__4GB_RAM__Dual_SIM_-_Light_Green_-_Unlocked_-_International_Model_-_Used_-_Like_New",
     "price": 244000,
     "quantity": 54
@@ -91,7 +91,7 @@
   {
     "id": 201,
     "name": "MacKook Air 2021",
-    "img": "./assets/images/pc/istockphoto-1074074468-1024x1024__1_-removebg-preview.png",
+    "img": "./assets/images/pc/The_Best_Laptops_for_2024-removebg-preview.png",
     "description": "MacKook Air 2021_Blanc",
     "price": 729000,
     "quantity": 38
@@ -116,7 +116,7 @@
   {
     "id": 204,
     "name": "HP_15",
-    "img": "./assets/images/pc/assets/images/pc/HP_15_15s-gy0003AU_Laptop_Price_in_India___AMD_3020e___4GB___1TB__-removebg-preview.png",
+    "img": "./assets/images/pc/HP_15_15s-gy0003AU_Laptop_Price_in_India___AMD_3020e___4GB___1TB__-removebg-preview.png",
     "description": "HP_15_15s-gy0003AU_Laptop_Price_in_India___AMD_3020e___4GB___1TB__",
     "price": 390000,
     "quantity": 90
@@ -135,6 +135,54 @@
     "id": 206,
     "name": "_1000_BUDGET_PC",
     "img": "./assets/images/pc/_1000_BUDGET_PC_Build_for_Gaming_NOW___October_2021-removebg-preview.png",
+    "description": "1000_BUDGET_PC_Build_for_Gaming_NOW___October_2021",
+    "price": 7000,
+    "quantity": 41
+  },
+
+  {
+    "id": 207,
+    "name": "_1000_BUDGET_PC",
+    "img": "./assets/images/pc/Apple_MacBook_Pro_Touch_Bar_Mpxv2ll_a_BTO_3_5GHz_i7__16_GB_Ram__512_GB_Ssd__Space_Silver__Excellent_condition_+_New_case_and_Apple_wireless_mouse-removebg-preview.png",
+    "description": "1000_BUDGET_PC_Build_for_Gaming_NOW___October_2021",
+    "price": 7000,
+    "quantity": 41
+  },
+
+  {
+    "id": 208,
+    "name": "_1000_BUDGET_PC",
+    "img": "./assets/images/pc/Best_College_Laptop_for_2023-removebg-preview.png",
+    "description": "1000_BUDGET_PC_Build_for_Gaming_NOW___October_2021",
+    "price": 7000,
+    "quantity": 41
+  },
+
+
+  {
+    "id": 209,
+    "name": "_1000_BUDGET_PC",
+    "img": "./assets/images/pc/Apple_MacBook_Pro_Touch_Bar_Mpxv2ll_a_BTO_3_5GHz_i7__16_GB_Ram__512_GB_Ssd__Space_Silver__Excellent_condition_+_New_case_and_Apple_wireless_mouse-removebg-preview.png",
+    "description": "1000_BUDGET_PC_Build_for_Gaming_NOW___October_2021",
+    "price": 7000,
+    "quantity": 41
+  },
+
+
+
+  {
+    "id": 210,
+    "name": "_1000_BUDGET_PC",
+    "img": "./assets/images/pc/Apple_2020_MacBook_Air_Laptop_M1_Chip__13__Retina_Display__8GB_RAM__256GB_SSD_Storage__Backlit_Keyboard__FaceTime_HD_Camera__Touch_ID__Works_with_iPhone_iPad__Silver-removebg-preview.png",
+    "description": "1000_BUDGET_PC_Build_for_Gaming_NOW___October_2021",
+    "price": 7000,
+    "quantity": 41
+  },
+
+  {
+    "id": 211,
+    "name": "_1000_BUDGET_PC",
+    "img": "./assets/images/pc/Lenovo_IdeaPad_Thin_and_Light_Laptop__15_6__FHD_Display__AMD_Ryzen_5_5500U_Processor__Beats_i7-1185G7___20GB_RAM__512GB_PCIe_SSD__Backlit_Keyboard__Fingerprint_Reader__Windows_11__Sand__Latest_Model_-.png",
     "description": "1000_BUDGET_PC_Build_for_Gaming_NOW___October_2021",
     "price": 7000,
     "quantity": 41
@@ -170,7 +218,7 @@
   {
     "id": 304,
     "name": "PlayStation_5",
-    "img": "/assets/images/Consoles/PlayStation_5-Konsole-removebg-preview.png",
+    "img": "./assets/images/Consoles/PlayStation_5-Konsole-removebg-preview.png",
     "description": "IO Throughput de 5,5 GB/s brute et de 8 à 9 GB/s compressé. Résolution 8K et option 4K. Lecteur Blu-ray 4K. Rétrocompatibilité PS4",
     "price": 7000,
     "quantity": 32
@@ -612,5 +660,201 @@
     "description": "Tresbon jeu retro",
     "price": 7000,
     "quantity": 6
+  },
+
+  {
+    "id": 509,
+    "name": "FIFA21",
+    "img": "./assets/images/Jeux/76d3821c-d85b-426e-8937-9d4659fcd6a0.jpeg  ",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+  {
+    "id": 510,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/804cd9ad-595e-46f3-9542-e3fa74c50b9a.jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+  {
+    "id": 511,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/5279dd02-4bd4-4f37-bf40-eb48c95f822d.jpeg  ",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+  {
+    "id": 512,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/e933d684-e38d-4832-ab9a-1c166b716f4b.jpeg ",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+  {
+    "id": 513,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/Atelier Lydie & Suelle_ The Alchemists and the Mysterious Paintings Switch NSP Free Download.jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+  {
+    "id": 514,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/Atlus Gungnir -Masou no Gunshin to Eiyusenso- for PSP [Japan Import].jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+  {
+    "id": 515,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/b716b971-a25e-4abd-b2ee-2e514134d543.jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+
+  {
+    "id": 516,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/Beyblade VForce_ Ultimate Blader Jam - (GBA) Game Boy Advance [Pre-Owned] - PRE-OWNED GAME CARTRIDGE ONLY.jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+  {
+    "id": 517,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/Boku no Natsuyasumi 4 - Seitouchi Shounen Tanteidan, Boku to Himitsu no Chizu boxarts for Sony PSP.jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+  {
+    "id": 518,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/c920dfdb-2f21-42d2-85a2-e16221f9c9ae.jpeg ",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+
+  {
+    "id": 519,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/Captain Toad - Treasure Tracker -[Nintendo Switch].jpeg assets/images/Jeux/Catherine - Alternate Boxart -Xbox 360.jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+
+
+  {
+    "id": 520,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/Coming soon !.jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+
+
+
+  {
+    "id": 521,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/DEAD CELLS THE FATAL SEED BUNDLE.jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+
+
+  {
+    "id": 522,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/Disgaea_ Afternoon of Darkness - PSP.jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+
+
+  {
+    "id": 523,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/Dracula Gameboy.jpeg ",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+
+
+  {
+    "id": 524,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/Dragon Ball Z Budokai Tenkaichi 3 (1).jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+
+
+  {
+    "id": 525,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/e7eead86-59d9-4117-a4aa-3ab7880553ba.jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+
+
+  {
+    "id": 526,
+    "name": "Super_Mario_GB",
+    "img": "./assets/images/Jeux/e69aef03-c9b4-4cb6-b510-0bc16ad92d77.jpeg",
+    "description": "Tresbon jeu retro",
+    "price": 7000,
+    "quantity": 6
   }
+
+
+
+
+
 ]
