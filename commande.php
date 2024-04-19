@@ -37,25 +37,31 @@ $object_count = count($cartNum);
 
 
 // Vérifier que les données du formulaire ont été soumises
-if (isset($_POST['submit'])) {
+if (isset($_POST['generate'])){
 
     // Créer un objet à partir des données du formulaire
-    $formData = [
+    $formData = array(
         'name' => $_POST['name'],
         'email' => $_POST['email'],
         'Numero' => $_POST['phone'],
-        'message' => $_POST['message'],
+        //'message' => $_POST['message'],
         'payement' => $_POST['payment'],
         'lieu_livraison' => $_POST['deliver']
-    ];
+      );
     
     // Transformer l'objet en JSON
-    $jsonData = json_encode($formData);
+    $jsondata = json_encode($formData);
 
     // Faire quelque chose avec les données JSON (les enregistrer dans un fichier, les envoyer à une API, etc.)
-    file_put_contents('form_data.json', $jsonData);
+    file_put_contents('./assets/data/form_data.json', $jsondata);
 ;
     exit;
+
+
+    $Jsondata = file_get_contents('./assets/data/form_data.json');
+$form = json_decode($Jsondata,true);
+
+
 }
 
 
@@ -103,7 +109,7 @@ if (isset($_POST['submit'])) {
         <h1>Formulaire de commande</h1>
       </header>
       <main>
-        <form id="myForm" method="post" action="commande.php">
+        <form id="myForm" method="post" action="./commande.php">
           <div class="form-group">
             <label for="name">Nom :</label>
             <input type="text" id="name" name="name" required>
@@ -131,7 +137,7 @@ if (isset($_POST['submit'])) {
               <option value="Kotto">Kotto</option>
               <option value="Bepanda">Bepanda</option>
               <option value="yassa">yassa</option>
-              <option value="Ange Raphael">Ange Raphael</option>
+              <option value="ange_raphael">Ange Raphael</option>
               <option value="citee des palmiers">citee des palmiers</option>
               <option value="Bepanda">Bepanda</option>
               <option value="Bonapriso">Bonapriso</option>
@@ -139,7 +145,7 @@ if (isset($_POST['submit'])) {
             <br>
             <br>
             
-            <button type="submit">Generer ma Facture</button>
+            <button type="submit" name="generate">Generer ma Facture</button>
         
           </div>
           
@@ -182,21 +188,25 @@ if (isset($_POST['submit'])) {
           </table>
           <p class="totale">Total à payer : 50,00 €</p>
         </section>
-        <section class="order-details">
+      <?php  foreach($form as $fd){
+         ?> <section class="order-details">
           <h2>Détails de la commande</h2>
-          <p>Numero du telephone:<? echo $formData["numero"]?></p>
-          <p>Nom du client : <? echo $formData["name"]?></p>
+          <p>Numero du telephone:<? echo  $fd->numero?></p>
+          <p>Nom du client : <? echo $fd["name"]?></p>
           <p>Numéro de commande : 12345</p>
           <p>Date de la commande : <?php echo $date_actuelle; ?></p>
-          <p>Méthode de livraison : <? echo $formData["deliver"]?></p>
-          <p>Méthode de paiement :<? echo $formData["payment"]?></p>
+          <p>Méthode de livraison : <? echo $fd["deliver"] ?></p>
+          <p>Méthode de paiement :<? echo $fd["payment"]?></p>
           <p>Délivré par:      <span> RandyShop™</span></p>
         </section>
         <form >
+
+     <?php } ?>
             <br>
             <br>
     <button type="submit">Valider la commande</button>
     </form>
+    
         <section class="next-steps">
           <h2>Étapes suivantes</h2>
           <p>Votre commande sera préparée et expédiée dans les plus brefs délais.</p>

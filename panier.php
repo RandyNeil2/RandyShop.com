@@ -58,62 +58,63 @@
 
 
 
-                //Creer un nouveau tableau Json Commande
+                
+                  if (isset($_POST['submit'])) {
+                   
+                    $file = fopen("./assets/data/commande.json", "w");
+                
+    
+                
+       
+                  }
 
-                function fileWriteAppend(){
-                  $current_data = file_get_contents('./assets/data/commande.json');
-                  $productin = $GLOBALS['product'];
-                  $array_data = json_decode($current_data, true);
-                  $index = array_search($productin->id, array_column($array_data, "id"));
-                 
-                    $produit = array(
-                      'id' => $productin->id,
-                      'name' => $productin->name,
-                      'img' => $productin->img,
-                      'prix' => $productin->price,
-                      'quantite' => 1
-                      
-                  );
-                  foreach ($array_data as $index => $prod) {
-                    if ($prod['id'] === $produit['id']) {
-                       
-                        $array_data[$index]["quantite"]++;
-                        $final_data = json_encode($array_data);
-                        return $final_data;
+
+
+                  if (isset($_POST['increment'])) {
+                    $index = array_search($_POST['increment'], array_column($cart, 'id'));
+                    echo $index;
+                    if ($index !== false) {
+                        $cart[$index]['quantite']++;
+                        $jsonData = json_encode($cart);
+                        file_put_contents('./assets/data/cart.json', $jsonData);
                     }
                 }
-            
-         
-                array_push($array_data, $produit);
-                $final_data = json_encode($array_data);
-                return $final_data;
-            }
-        
-                function fileCreateContent(){
-                  $file = fopen("./assets/data/cart.json", "w");
-                  $productin = $GLOBALS['product'];
-                  echo "<h2>" . $productin->id . "</h2>";
-                  $produit = array(
-                    'id' => $productin->id,
-                    'name' => $productin->name,
-                    'img' => $productin->img,
-                    'prix' => $productin->price,
-                    'quantite' => 1
-                    
-                );
-                $array_data[] = $produit;
-                $final_data = json_encode($array_data);
-                fclose($file);
-                return $final_data;
-                  
-                }
+                if (isset($_POST['decrement'])) {
+                  $index = array_search($_POST['decrement'], array_column($cart, 'id'));
+                  if ($index !== false && $cart[$index]['quantite'] > 1) {
+                      $cart[$index]['quantite']--;
+                      $jsonData = json_encode($cart);
+                      file_put_contents('./assets/data/cart.json', $jsonData);
+                  }
+              }
 
-                
-               
+
+              if (isset($_POST['collect'])) {
+                function fileCreateContent() {
+                    $file = fopen("./assets/data/commande.json", "w");
+                    $array_data = [];
             
-                    
-                
-              
+                    foreach ($cart as $cartProduct) {
+                        $produit = array(
+                            'id' => $cartProduct['id'],
+                            'name' => $cartProduct['name'],
+                            'img' => $cartProduct['img'],
+                            'prix' => $cartProduct['prix'],
+                            'quantite' => $cartProduct['quantite']
+                        );
+            
+                        $array_data[] = $produit;
+                    }
+            
+                    $final_data = json_encode($array_data, JSON_PRETTY_PRINT);
+                    file_put_contents('./assets/data/commande.json', $final_data);
+                    fclose($file);
+            
+                    return $final_data;
+                }
+            
+                fileCreateContent();
+            }
           ?>  
   
 
@@ -170,9 +171,9 @@
           <div class="quantite-form">
             <label for="quantite">Quantité: <div>
               <form method="post" action="panier.php">
-            <button type="submit" name="increment_" >-</button>
+            <button type="submit" name="increment" >-</button>
               <input  id="quantite" name="quantite" value="<?php echo $cartProduct["quantite"]?>" min="1">
-              <button type="submit" name="decrement_">+</button>
+              <button type="submit" name="decrement">+</button>
               </form>
             </div></label> 
             
@@ -195,7 +196,7 @@
                           <p>Garantie:</p>
                       </div>
                       <form action="./commande.php">
-                      <a href="./commande.php"><button type="submit">Passer La commande</button></a>
+                      <a href="./commande.php"><button type="submit" name="collect">Passer La commande</button></a>
                       </form>
                   </div>
 
