@@ -14,10 +14,10 @@
         </div>
         <h1>Rejoignez notre communauté</h1>
         <p>Inscrivez-vous pour créer un compte.</p>
-        <form action="#" method="POST">
-            <input type="text" placeholder="Nom" required>
-            <input type="email" placeholder="E-mail" required>
-            <input type="password" placeholder="Mot de passe" required>
+        <form action="connexion.php" method="POST">
+            <input class='name' type="text" placeholder="Nom"  name="username"  required>
+            <input type="email" placeholder="E-mail" name="email" required>
+            <input type="password" placeholder="Mot de passe" name="password" required>
             <button type="submit">S'inscrire</button>
         </form>
         <p>Vous avez deja un compte?

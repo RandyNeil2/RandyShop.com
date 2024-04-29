@@ -46,7 +46,7 @@ $object_count = count($cartNum);
         <!-- <div id="results"></div> -->
 
         <div class="dropdown">
-            <button class="dropbtn"><img src="" alt=""> Compte</button>
+            <button class="dropbtn"><img src="" alt=""> <img class='headimg' src="./assets/images/1.svg  alt=""> compte</button>
             <div class="dropdown-content">
               <a href="./register.php"><img src="" alt=""> S'inscrire</a>
               <a href="login.php"> <img src="" alt=""> Se connecter</a>
@@ -154,7 +154,7 @@ $object_count = count($cartNum);
           </div>
 
           <div class="event">
-            <h3>Vente Flash</h3>
+            <h3>Top Vente</h3>
             <button><a href="">Voir Plus</a></button>
           </div>
     
@@ -170,7 +170,7 @@ $object_count = count($cartNum);
             </div>
 
             <div class="event">
-                <h3>Vente Flash</h3>
+                <h3>Offre Gaming</h3>
                 <button><a href="">Voir Plus</a></button>
               </div>
         

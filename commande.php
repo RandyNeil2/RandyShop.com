@@ -31,7 +31,35 @@ if (!is_array($cartNum) || empty($cartNum)) {
 $object_count = count($cartNum);
 }
 
+
+$jsonCartData = file_get_contents("./assets/data/commande.json"); 
+            $com = json_decode($jsonCartData, true); 
 // Afficher la date actuelle
+
+
+ $jsonCartData = file_get_contents("./assets/data/cart.json"); 
+            $cart = json_decode($jsonCartData, true); 
+
+if (isset($_POST['collect']))  {
+  $commandeData = array();
+
+  foreach ($cart as $cartProduct) {
+      $productData = array(
+          'id' => $cartProduct['id'],
+          'name' => $cartProduct['name'],
+          'prix' => $cartProduct['prix'],
+          'quantite' => $cartProduct['quantite'],
+          'total' => $cartProduct['quantite'] * $cartProduct['prix']
+      );
+
+      $commandeData[] = $productData;
+  }
+
+  $final_data = json_encode($commandeData, JSON_PRETTY_PRINT);
+  file_put_contents('./assets/data/commande.json', $final_data);
+  exit;
+  echo 'collect Success';
+}
 
 
 
@@ -58,8 +86,9 @@ if (isset($_POST['generate'])){
     exit;
 
 
-    $Jsondata = file_get_contents('./assets/data/form_data.json');
-$form = json_decode($Jsondata,true);
+    $jsonCartData = file_get_contents("./assets/data/form_data.json"); 
+            $form = json_decode($jsonCartData, true); 
+
 
 
 }
@@ -83,7 +112,7 @@ $form = json_decode($Jsondata,true);
         <!-- <div id="results"></div> -->
 
         <div class="dropdown">
-            <button class="dropbtn">Compte</button>
+            <button class="dropbtn"><img class='headimg' src="./assets/images/1.svg  alt=""> compte</button>
             <div class="dropdown-content">
               <a href="./register.php">S'inscrire</a>
               <a href="login.php">Se connecter</a>
@@ -156,6 +185,7 @@ $form = json_decode($Jsondata,true);
       <main>
         <section class="order-summary">
           <h2>Récapitulatif de votre commande</h2>
+
           <table>
             <thead>
               <tr>
@@ -167,41 +197,38 @@ $form = json_decode($Jsondata,true);
             </thead>
             <tbody>
               <tr>
-                <td>Produit A</td>
-                <td>2</td>
-                <td>10,00 €</td>
-                <td>20,00 €</td>
+                <?php foreach($com as $comData) {
+            ?>
+                <td class="td"><?php echo $comData["name"] ?></td>
+                <td><?php echo $comData["quantite"] ?></td>
+                <td><?php echo $comData["prix"] ?><span> XAF</span></td>
+                <td><?php echo $comData["prix"]*$comData["quantite"]  ?></td>
               </tr>
-              <tr>
-                <td>Produit B</td>
-                <td>1</td>
-                <td>15,00 €</td>
-                <td>15,00 €</td>
-              </tr>
-              <tr>
-                <td>Produit C</td>
-                <td>3</td>
-                <td>5,00 €</td>
-                <td>15,00 €</td>
-              </tr>
+              <?php }?>
+              
             </tbody>
           </table>
-          <p class="totale">Total à payer : 50,00 €</p>
+          
+          <p class="totale">Total à payer :<?php 
+          $prixTotal=0;
+          foreach($com as $comData) {
+           $prixTotal += $comData["prix"];}
+           echo $prixTotal ?>  <span> XAF</span></p>
         </section>
-      <?php  foreach($form as $fd){
-         ?> <section class="order-details">
+      
+          <section class="order-details">
           <h2>Détails de la commande</h2>
-          <p>Numero du telephone:<? echo  $fd->numero?></p>
-          <p>Nom du client : <? echo $fd["name"]?></p>
+          <p>Numero du telephone:     <?php echo $form['name']?></p>
+          <p>Nom du client : </p>
           <p>Numéro de commande : 12345</p>
           <p>Date de la commande : <?php echo $date_actuelle; ?></p>
-          <p>Méthode de livraison : <? echo $fd["deliver"] ?></p>
-          <p>Méthode de paiement :<? echo $fd["payment"]?></p>
+          <p>Méthode de livraison : </p>
+          <p>Méthode de paiement :</p>
           <p>Délivré par:      <span> RandyShop™</span></p>
         </section>
         <form >
 
-     <?php } ?>
+     
             <br>
             <br>
     <button type="submit">Valider la commande</button>

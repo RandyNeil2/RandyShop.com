@@ -22,7 +22,7 @@
             <!-- <div id="results"></div> -->
     
             <div class="dropdown">
-                <button class="dropbtn">Compte</button>
+                <button class="dropbtn"><img class='headimg' src="./assets/images/1.svg  alt=""> compte</button>
                 <div class="dropdown-content">
                   <a href="./register.php">S'inscrire</a>
                   <a href="login.php">Se connecter</a>

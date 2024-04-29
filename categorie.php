@@ -59,7 +59,7 @@
         <!-- <div id="results"></div> -->
 
         <div class="dropdown">
-            <button class="dropbtn">Compte</button>
+            <button class="dropbtn"><img class='headimg' src="./assets/images/1.svg  alt=""> compte</button>
             <div class="dropdown-content">
               <a href="./register.php">S'inscrire</a>
               <a href="login.php">Se connecter</a>
@@ -113,8 +113,8 @@
        ?> <!-- <button class="left-btn" onclick="scrollContent('left')">←</button> -->
         <a href="./produit.php?id=<?php echo $product->id ?>"><div class="product"> 
           <img class="prooduct-img" src="<?php echo  $product->img?>" alt="">
-         <h3><?php echo $product->name ?></h3>
-          <h4><?php echo $product->price ?></h4>
+         <h4><?php echo $product->name ?></h4>
+          <h3><?php echo $product->price ?> XAF</h3>
         </div></a>
         <!-- Ajoutez d'autres produits ici -->
         <?php } ?>

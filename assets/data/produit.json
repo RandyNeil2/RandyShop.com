@@ -851,6 +851,44 @@
     "description": "Tresbon jeu retro",
     "price": 7000,
     "quantity": 6
+  },
+
+
+  {
+    "id": 527,
+    "name": "SnowBaord Kids 2",
+    "img": "./assets/images/Jeux/9df82225-2815-438b-9bb5-87324ac4a9ec.jpeg",
+    "description": "Bon jeu Nintendo 64",
+    "price": 17000,
+    "quantity": 6
+  },
+
+  {
+    "id": 601,
+    "name": "Best_NBN-ready_modem_routers_in_Australia",
+    "img": "./assets/images/modem/Best_NBN-ready_modem_routers_in_Australia-removebg-preview.png",
+    "description": "Best_NBN-ready_modem_routers_in_Australia-removebg-preview",
+    "price": 7000,
+    "quantity": 6
+  },
+
+  {
+    "id": 602,
+    "name": "NETGEAR_Nighthawk_Multi_Gigabit_2_7Gbps_Cable_Modem_with_Wi-Fi_6_Router",
+    "img": "./assets/images/modem/NETGEAR_Nighthawk_Multi_Gigabit_2_7Gbps_Cable_Modem_with_Wi-Fi_6_Router___Nebraska_Furniture_Mart__1_-removebg-preview.png",
+    "description": "NETGEAR_Nighthawk_Multi_Gigabit_2_7Gbps_Cable_Modem_with_Wi-Fi_6_Router___Nebraska_Furniture_Mart__1_",
+    "price": 7000,
+    "quantity": 6
+  },
+
+
+  {
+    "id": 603,
+    "name": "Repetidor_de_señal_de_enrutador_doméstico_Wifi_Amplificador_Pro",
+    "img": "./assets/images/modem/Repetidor_de_señal_de_enrutador_doméstico_Wifi_Amplificador_Pro__CH_negro_-removebg-preview.png",
+    "description": "Repetidor_de_señal_de_enrutador_doméstico_Wifi_Amplificador_Pro__CH_negro_",
+    "price": 7000,
+    "quantity": 6
   }
 
 

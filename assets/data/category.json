@@ -38,7 +38,7 @@
         "name":"jeux",
         "img":"/assets/images/s",
         "description":"Des jeux pour vos consoles",
-        "listdeproduits":[501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520,521,522,523,524,525,526]
+        "listdeproduits":[501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520,521,522,523,524,525,526,527]
     },
     
     {
@@ -46,7 +46,7 @@
         "name":"Modem",
         "img":"/assets/images/s",
         "description":"Des jeux pour vos consoles",
-        "listdeproduits":[1,2,3]
+        "listdeproduits":[601,602,603]
     },
 
 

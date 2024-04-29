@@ -43,3 +43,6 @@ nextBtn.addEventListener('click', () => {
       content.scrollLeft += scrollOffset;
     }
   }
+
+
+  

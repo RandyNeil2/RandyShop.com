@@ -1098,6 +1098,12 @@ footer {
     width: 70%;
   }
 
+  .bodyCategory .grid-container h4{
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
   .div .event{
     height: 50px;
     background-color: white;
@@ -1245,18 +1251,64 @@ overflow-wrap: break-word;}
   padding: 15px 0 10px 0;
  }
 
- .kartProducts .h3 h3{
+ .h3 h3{
   font-size: medium;
-  font-weight:bolder;
+  font-weight:500;
  }
  .kartProducts .h3{
-  width: 30px auto;
+  width:  auto;
  }
 
 
  .kartProducts .h4{
   margin-top: 20px;
   font-weight: bolder;
+ }
+
+
+
+ .kartProducts .form{
+  display: flex;
+  gap: 4px;
+ }
+
+ div .form .qte{
+  background-color: #218838;
+ }
+
+ .changeQte .qte{
+  background-color: #218838;
+ }
+
+ .qte{
+  background-color: #218838;
+ }
+
+
+
+ .cartbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #d4310c;
+
+ }
+
+ .cartbtn img{
+  width: 15px ;
+  height: 15px;
+ }
+
+
+ .kartProducts .form input{
+  width: 40px;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
  }
 
  .kartProducts .kartProductImg{
@@ -1454,6 +1506,9 @@ overflow-wrap: break-word;}
   padding: 0;
 }
 
+.name{
+  width: 400px;
+}
 /* Styles de la page de finalisation de commande */
 .bodyCommande .order-confirmation-container {
   max-width: 800px;
@@ -1551,5 +1606,15 @@ overflow-wrap: break-word;}
   color:#0c4d1a;
 }
 
+
+.td{
+  font-weight: 600;
+  font-size: medium;
+}
+
+td span{
+  font-weight: 600;
+  font-size: medium;
+}
 
 

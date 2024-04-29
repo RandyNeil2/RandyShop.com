@@ -57,64 +57,31 @@
 
 
 
+                 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['increment'])) {
+        $index = array_search($_POST['increment'], array_column($cart, 'id'));
+        if ($index !== false) {
+            $cart[$index]['quantite']++;
+            $jsonData = json_encode($cart);
+            file_put_contents('./assets/data/cart.json', $jsonData);
+        }
+    }
 
+    if (isset($_POST['decrement'])) {
+        $index = array_search($_POST['decrement'], array_column($cart, 'id'));
+        if ($index !== false && $cart[$index]['quantite'] > 1) {
+            $cart[$index]['quantite']--;
+            $jsonData = json_encode($cart);
+            file_put_contents('./assets/data/cart.json', $jsonData);
+        }
+    }
+}
+
+              
+            
                 
-                  if (isset($_POST['submit'])) {
-                   
-                    $file = fopen("./assets/data/commande.json", "w");
-                
-    
-                
-       
-                  }
-
-
-
-                  if (isset($_POST['increment'])) {
-                    $index = array_search($_POST['increment'], array_column($cart, 'id'));
-                    echo $index;
-                    if ($index !== false) {
-                        $cart[$index]['quantite']++;
-                        $jsonData = json_encode($cart);
-                        file_put_contents('./assets/data/cart.json', $jsonData);
-                    }
-                }
-                if (isset($_POST['decrement'])) {
-                  $index = array_search($_POST['decrement'], array_column($cart, 'id'));
-                  if ($index !== false && $cart[$index]['quantite'] > 1) {
-                      $cart[$index]['quantite']--;
-                      $jsonData = json_encode($cart);
-                      file_put_contents('./assets/data/cart.json', $jsonData);
-                  }
-              }
-
-
-              if (isset($_POST['collect'])) {
-                function fileCreateContent() {
-                    $file = fopen("./assets/data/commande.json", "w");
-                    $array_data = [];
             
-                    foreach ($cart as $cartProduct) {
-                        $produit = array(
-                            'id' => $cartProduct['id'],
-                            'name' => $cartProduct['name'],
-                            'img' => $cartProduct['img'],
-                            'prix' => $cartProduct['prix'],
-                            'quantite' => $cartProduct['quantite']
-                        );
-            
-                        $array_data[] = $produit;
-                    }
-            
-                    $final_data = json_encode($array_data, JSON_PRETTY_PRINT);
-                    file_put_contents('./assets/data/commande.json', $final_data);
-                    fclose($file);
-            
-                    return $final_data;
-                }
-            
-                fileCreateContent();
-            }
           ?>  
   
 
@@ -135,7 +102,7 @@
               <!-- <div id="results"></div> -->
       
               <div class="dropdown">
-                  <button class="dropbtn">Compte</button>
+                  <button class="dropbtn"><img class="headimg" src="./assets/images/1.svg  alt=""> compte</button>
                   <div class="dropdown-content">
                     <a href="./register.php">S'inscrire</a>
                     <a href="login.php">Se connecter</a>
@@ -163,17 +130,18 @@
                     <div class="suppbutton"><form method="post">
                     <div class="h3"><h3><?php echo $cartProduct['name']  ?></h3></div>
                     <form method="post" action="panier.php"> 
-                      <button type="submit" value=" <?php echo $cartProduct['id']; ?>"name="delete_btn" class="suppBtn">Rétirer</button></div></form>
+                      <button class='cartbtn' type="submit" value=" <?php echo $cartProduct['id']; ?>"name="delete_btn" class="suppBtn"><img src="./assets/images/delete-dustbin-garbage-svgrepo-com.svg" alt=""> Rétirer</button></div></form>
                 
 
                       <h4 class="h4"><?php echo $cartProduct['prix']  ?>XAF </h4>
                       
           <div class="quantite-form">
-            <label for="quantite">Quantité: <div>
-              <form method="post" action="panier.php">
-            <button type="submit" name="increment" >-</button>
+            <label for="quantite">Quantité:
+               <div>
+              <form  class='form'  method="post" action="panier.php">
+            <button class='qte' type="submit" name="increment" >-</button>
               <input  id="quantite" name="quantite" value="<?php echo $cartProduct["quantite"]?>" min="1">
-              <button type="submit" name="decrement">+</button>
+              <button class='qte' type="submit" name="decrement">+</button>
               </form>
             </div></label> 
             
@@ -195,8 +163,8 @@
                           <p>Livraison:</p>
                           <p>Garantie:</p>
                       </div>
-                      <form action="./commande.php">
-                      <a href="./commande.php"><button type="submit" name="collect">Passer La commande</button></a>
+                      <form method="post" action="./commande.php" >
+                      <button class='qte' type="submit" name="collect">Passer La commande</button>
                       </form>
                   </div>
 
