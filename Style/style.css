@@ -1618,3 +1618,291 @@ td span{
 }
 
 
+
+
+ 
+.bodyDashboard{
+    height: 100vh;
+} 
+
+
+
+
+
+.bodyDashboard .page-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #00353f;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  width:200px ;
+}
+
+.bodyDashboard .content {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+
+.bodyDashboard .container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.bodyDashboard h2 {
+  text-align: center;
+}
+
+.bodyDashboard .form-group {
+  margin-bottom: 20px;
+}
+
+.bodyDashboard label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* .bodyDashboard input[type="text"],
+.bodyDashboard input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+.bodyDashboard button {
+  display: block;
+  /* width: 100%;
+  padding: 10px;
+  font-size: 16px;
+   background-color: #007bff; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; */
+}
+
+
+.mainDashboard{
+  display: flex;
+  gap: 30px;
+  
+  
+}
+
+.mainSession div h2{
+  border-bottom: #ecf8f6 solid 3px;
+  padding-bottom: 3px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+
+.dashGreat{
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  margin-left: 10px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashGreat p span{
+  font-weight: bolder;
+}
+
+
+.mainDashboard .sessionBtn .page-button:active, .mainDashboard .sessionBtn .page-button:focus{
+  background-color: #00353f !important;
+  color: white;
+}
+
+.mainDashboard .mainSession{
+  width: 75%;
+  margin-top: 30px;
+
+}
+
+
+.mainDashboard .sessionBtn{
+  width: 15%;
+  margin-left: 20px;
+
+}
+
+.sessionBtn .page-button img{
+  width: 20px;
+  height: auto;
+}
+
+.sessionBtn .page-button{
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainDashboard .mainSession div{
+  width: 100%;
+  height: 100%;
+}
+
+.bodyDashboard .custom-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.bodyDashboard .custom-table th, .custom-table td {
+  height: auto;
+  padding: 8px;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+.bodyDashboard .custom-table th {
+  background-color: #00353f;
+  color: #fff;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.bodyDashboard .custom-table tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.bodyDashboard .custom-table tbody tr:hover {
+  background-color: #e1e1e1;
+}
+
+
+.bodyDashboard .action{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodyDashboard .action1{
+  background-color: #505050;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 7px;
+  font-weight: bold;
+  color: white;
+  width: 50x;
+}
+
+.bodyDashboard .action2{
+  background-color: #d4310c;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 7px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.bodyDashboard .action1 img,.action2 img{
+  width: 20PX;
+  height: 15px;
+
+}
+
+
+.bodyDashboard .dashContainer .addProd{
+  height: 15px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: bolder;
+  font-style: italic;
+  background-color:#00353f ;
+  margin-top: 25px;
+  
+
+}
+
+.bodyDashboard .dashContainer form{
+  display: flex;
+  justify-content: end;
+  margin-right: 55px;
+}
+
+
+
+.mainSession .update .container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainSession .update  .container h2 {
+  text-align: center;
+}
+
+.mainSession .update .form-group {
+  margin-bottom: 20px;
+}
+
+.mainSession .update .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.mainSession .update  .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mainSession .update .form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.update{
+  display: flex;
+  margin-top: 15px;
+  padding: 10px;
+  gap: 15px;
+}
+
+.form-groupbtn{
+  display: flex;
+  justify-content: end;
+}
