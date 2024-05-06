@@ -1256,7 +1256,7 @@ overflow-wrap: break-word;}
   font-weight:500;
  }
  .kartProducts .h3{
-  width:  auto;
+  width: 100px;
  }
 
 
@@ -1903,6 +1903,108 @@ textarea {
 }
 
 .form-groupbtn{
+  display: flex;
+  justify-content: end;
+}
+
+.userTable{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer{
+  margin-top: 30px;
+}
+
+
+.containers {
+  position: relative;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+}
+
+#formulaire-container {
+  padding-top: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  width: 20px auto;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px;
+  display: none;
+  z-index: 2;
+}
+
+.form-buttons {
+  margin-top: 10px;
+}
+
+.form-buttons button {
+  margin-right: 10px;
+}
+
+
+.bodyDashboard .form-buttons{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+
+#formulaire-container button{
+
+  height: 15px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: bolder;
+  font-style: italic;
+  /* background-color:#00353f ; */
+  margin-top: 25px;
+}
+
+.qte-prix{
+  display: flex;
+  gap: 7px;
+}
+
+.goBack{
+  background-color: #cbcbcb;
+
+}
+
+.bodyDashboard .form-buttons .goBack:hover{
+  background-color:#d4310c ;
+}
+
+.ok{
+  background-color: #00353F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ok:hover{
+  transform: scale(1.1);
+}
+
+.alignementBouton{
   display: flex;
   justify-content: end;
 }

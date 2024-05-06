@@ -55,4 +55,35 @@ nextBtn.addEventListener('click', () => {
 
 
 
+
+  function afficherFormulaire() {
+    var ajouterProduitBtn = document.getElementById("ajouter-produit-btn");
+    var overlay = document.getElementById("overlay");
+    var formulaireContainer = document.getElementById("formulaire-container");
+    
+    ajouterProduitBtn.style.display = "none";
+    overlay.style.display = "block";
+    formulaireContainer.style.display = "block";
+  }
+  
+  function cacherFormulaire() {
+    var ajouterProduitBtn = document.getElementById("ajouter-produit-btn");
+    var overlay = document.getElementById("overlay");
+    var formulaireContainer = document.getElementById("formulaire-container");
+    
+    ajouterProduitBtn.style.display = "block";
+    overlay.style.display = "none";
+    formulaireContainer.style.display = "none";
+  }
+  
+  function annulerEnregistrement() {
+    var ajouterProduitBtn = document.getElementById("ajouter-produit-btn");
+    var overlay = document.getElementById("overlay");
+    var formulaireContainer = document.getElementById("formulaire-container");
+    
+    ajouterProduitBtn.style.display = "block";
+    overlay.style.display = "none";
+    formulaireContainer.style.display = "none";
+  }
+
   
