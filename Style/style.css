@@ -892,7 +892,7 @@ font-family: Arial, Helvetica, sans-serif;
   max-width: 400px;
   margin: 50px auto;
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -917,9 +917,13 @@ font-family: Arial, Helvetica, sans-serif;
 
 .containerLogin input {
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.containerLogin label{
+  margin-bottom: 5px;
 }
 
 .containerLogin button {
@@ -1670,15 +1674,21 @@ td span{
   margin-bottom: 5px;
 }
 
-/* .bodyDashboard input[type="text"],
-.bodyDashboard input[type="email"],
+.containerRegister input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="password"], 
 textarea {
   width: 100%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-} */
+  border-radius: 4px;}
+
+  .containerRegister .form-group{
+    font-size: 14px;
+  }
+
 
 .bodyDashboard button {
   display: block;

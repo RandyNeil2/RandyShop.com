@@ -14,9 +14,16 @@
     </div>
         <h1>Ravis de vous revoir!</h1>
         <p>Veuillez vous connecter pour accéder à votre compte.</p>
-        <form action="#" method="POST">
-            <input type="text" placeholder="Nom d'utilisateur" required>
-            <input type="password" placeholder="Mot de passe" required>
+        <form action="connexion.php" method="POST">
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" placeholder="pikafire@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Mot de passe:</label>
+        <input type="password"  id="password" name="password" placeholder="...." required>
+        </div>
             <button type="submit">Se connecter</button>
         </form>
         <br>

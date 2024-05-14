@@ -10,10 +10,7 @@
             $cart = json_decode($jsonCartData, true); 
             
             
-    
-
-
-    if (!is_array($cart) || empty($cart)) {
+     if (!is_array($cart) || empty($cart)) {
       $object_count=0;
   }else{
 
@@ -58,25 +55,26 @@
 
 
                  
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['increment'])) {
-        $index = array_search($_POST['increment'], array_column($cart, 'id'));
-        if ($index !== false) {
-            $cart[$index]['quantite']++;
-            $jsonData = json_encode($cart);
-            file_put_contents('./assets/data/cart.json', $jsonData);
-        }
-    }
 
-    if (isset($_POST['decrement'])) {
-        $index = array_search($_POST['decrement'], array_column($cart, 'id'));
-        if ($index !== false && $cart[$index]['quantite'] > 1) {
-            $cart[$index]['quantite']--;
-            $jsonData = json_encode($cart);
-            file_put_contents('./assets/data/cart.json', $jsonData);
-        }
-    }
-}
+                if (isset($_POST['increment'])) {
+                  $productId = $_POST['increment'];
+                  $index = array_search($productId, array_column($cart, 'id'));
+                  if ($index !== false) {
+                      $cart[$index]['quantite']++;
+                      $jsonData = json_encode($cart);
+                      file_put_contents('./assets/data/cart.json', $jsonData);
+                  }
+              }
+              
+              if (isset($_POST['decrement'])) {
+                  $productId = $_POST['decrement'];
+                  $index = array_search($productId, array_column($cart, 'id'));
+                  if ($index !== false && $cart[$index]['quantite'] > 1) {
+                      $cart[$index]['quantite']--;
+                      $jsonData = json_encode($cart);
+                      file_put_contents('./assets/data/cart.json', $jsonData);
+                  }
+              }
 
               
             
@@ -135,18 +133,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                       <h4 class="h4"><?php echo $cartProduct['prix']  ?>XAF </h4>
                       
-          <div class="quantite-form">
-            <label for="quantite">Quantité:
-               <div>
-              <form  class='form'  method="post" action="panier.php">
-            <button class='qte' type="submit" name="increment" >-</button>
-              <input  id="quantite" name="quantite" value="<?php echo $cartProduct["quantite"]?>" min="1">
-              <button class='qte' type="submit" name="decrement">+</button>
-              </form>
-            </div></label> 
-            
-        
-            </div>
+                      <div class="quantite-form">
+  <label for="quantite">Quantité:</label>
+  <div>
+    <form class='form' method="post" action="panier.php">
+      <button class='qte' type="submit" name="decrement" value="<?php echo $cartProduct['id']; ?>">-</button>
+      <input id="quantite" name="quantite" value="<?php echo $cartProduct["quantite"] ?>" min="1">
+      <button class='qte' type="submit" name="increment" value="<?php echo $cartProduct['id']; ?>">+</button>
+    </form>
+  </div>
+</div>
                       
                     
                   </div>
@@ -163,7 +159,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                           <p>Livraison:</p>
                           <p>Garantie:</p>
                       </div>
-                      <form method="post" action="./commande.php" >
+                      <form method="post" action="commande.php" >
                       <button class='qte' type="submit" name="collect">Passer La commande</button>
                       </form>
                   </div>

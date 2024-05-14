@@ -86,4 +86,15 @@ nextBtn.addEventListener('click', () => {
     formulaireContainer.style.display = "none";
   }
 
-  
+  var passwordInput = document.getElementById('password-input');
+var togglePasswordButton = document.getElementById('toggle-password');
+
+togglePasswordButton.addEventListener('click', function() {
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+    togglePasswordButton.textContent = 'Masquer';
+  } else {
+    passwordInput.type = 'password';
+    togglePasswordButton.textContent = 'Afficher';
+  }
+});
