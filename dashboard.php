@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+  <?php 
+  session_start();
+
+  if (isset($_SESSION['name'])) {
+      $userName = $_SESSION['name'];
+  } 
+  ?>
     <div class="bodyDashboard">
     <nav>
         <a href="./index.php">
@@ -22,7 +29,13 @@
             <!-- <div id="results"></div> -->
     
             <div class="dropdown">
-                <button class="dropbtn">Compte</button>
+            <button class="dropbtn">    <?php if (isset($_SESSION['name'])) { ?>
+        <!-- Texte à afficher après la connexion -->
+       <p><?php echo $userName ?></p>
+      
+       <script><img id="welcome-text"  class='headimg' src="./assets/images/1.svg  alt="> <p id="welcome-text"> compte</p> <?php } ?></button>
+            document.getElementById('welcome-text').style.display = 'none'; 
+       </script>
                 <div class="dropdown-content">
                   <a href="./register.html">S'inscrire</a>
                   <a href="login.html">Se connecter</a>
@@ -35,7 +48,7 @@
         <div class="mainDashboard">
         <div class="sessionBtn">
           <div class="dashGreat">
-           <p>Hi! <span>TcKoRaNé</span> San</p>  
+           <p>Hi! <span><?php echo $userName ?></span> San</p>  
           </div>
     <button class="page-button" onclick="afficherDiv('div1')"><img src="./assets/images/user-svgrepo-com (2).svg" alt=""><p>User</p><p>></p></button>
     <button autofocus class="page-button" onclick="afficherDiv('div2')"><img src="./assets/images/user-gear-svgrepo-com.svg" alt=""><p>Admin</p><p>></p></button>

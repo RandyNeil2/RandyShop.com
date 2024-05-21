@@ -98,3 +98,7 @@ togglePasswordButton.addEventListener('click', function() {
     togglePasswordButton.textContent = 'Afficher';
   }
 });
+
+
+// Masquer le texte de bienvenue après la connexion
+document.getElementById('welcome-text').style.display = 'none';

@@ -6,7 +6,14 @@
       <title>Document</title>
       <link rel="stylesheet" href="./Style/style.css">
       
-    <?php  $jsonCartData = file_get_contents("./assets/data/cart.json"); 
+    <?php 
+  session_start();
+
+  if (isset($_SESSION['name'])) {
+      $userName = $_SESSION['name'];
+  } 
+    
+    $jsonCartData = file_get_contents("./assets/data/cart.json"); 
             $cart = json_decode($jsonCartData, true); 
             
             
@@ -100,13 +107,24 @@
               <!-- <div id="results"></div> -->
       
               <div class="dropdown">
-                  <button class="dropbtn"><img class="headimg" src="./assets/images/1.svg  alt=""> compte</button>
-                  <div class="dropdown-content">
-                    <a href="./register.php">S'inscrire</a>
-                    <a href="login.php">Se connecter</a>
-                  </div>
-                </div>
+              <button class="dropbtn" style="background-color:#00353F; border:solid 2px white; color=#00b345; display=flex; align-items=center;justify-content=center">    <?php if (isset($_SESSION['name'])) { ?>
+        <!-- Texte à afficher après la connexion -->
+       <p><?php echo $userName ?></p>
       
+       <script><img id="welcome-text"  class='headimg' src="./assets/images/1.svg  alt="> <p id="welcome-text"> compte</p></button>
+            document.getElementById('welcome-text').style.display = 'none'; 
+       </script>
+                  <div class="dropdown-content">
+                  <script> <a id="welcome-text" href="./register.php">  S'inscrire </a>
+                  <a id="welcome-text" href="login.php"> Se connecter</a>
+                   document.getElementById('welcome-text').style.display = 'none';
+               </script>
+                    <a  href="./dashboard.php"> Mon espace </a>
+                    <a  href="./register.php">  se Deconnecter </a>
+                       </div>
+                </div>
+                 <?php } ?>
+                
                 <div class="refKart"> <a href="./panier.php"> <img src="./assets/images/shopping-basket.png"kart></a>
           <div class="numberKart"><?php echo $object_count?></div>
           

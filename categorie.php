@@ -9,8 +9,19 @@
     
 </head>
 <body>
-<?php $jsondata = file_get_contents('./assets/data/category.json');
+<?php
+
+session_start();
+
+if (isset($_SESSION['name'])) {
+    $userName = $_SESSION['name'];
+} 
+
+$jsondata = file_get_contents('./assets/data/category.json');
   $json_parsed_data = json_decode($jsondata, true);
+
+
+
   ?>
     <?php $item = $_GET['item']; 
         $jsoncategoriesdata = file_get_contents('./assets/data/category.json');
@@ -59,7 +70,13 @@
         <!-- <div id="results"></div> -->
 
         <div class="dropdown">
-            <button class="dropbtn"><img class='headimg' src="./assets/images/1.svg  alt=""> compte</button>
+        <button class="dropbtn">    <?php if (isset($_SESSION['name'])) { ?>
+        <!-- Texte à afficher après la connexion -->
+       <p><?php echo $userName ?></p>
+      
+       <script><img id="welcome-text"  class='headimg' src="./assets/images/1.svg  alt="> <p id="welcome-text"> compte</p> <?php } ?></button>
+            document.getElementById('welcome-text').style.display = 'none'; 
+       </script>
             <div class="dropdown-content">
               <a href="./register.php">S'inscrire</a>
               <a href="login.php">Se connecter</a>

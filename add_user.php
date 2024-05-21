@@ -34,8 +34,24 @@ try {
     // Exécution de la requête
     $stmt->execute();
 
+    // Récupération de l'ID de l'utilisateur nouvellement créé
+    $userId = $conn->lastInsertId();
+
+    // Démarrage de la session
+    session_start();
+
+    // Stockage des informations de l'utilisateur dans la session
+    $_SESSION['userId'] = $userId;
+    $_SESSION['name'] = $name;
+    $_SESSION['email'] = $email;
+    $_SESSION['phone'] = $phone;
+
     // L'utilisateur a été enregistré avec succès
     echo "Enregistrement réussi !";
+
+    // Redirection vers la page d'accueil ou la page de profil
+    header("Location: index.php");
+    exit;
 } catch (PDOException $e) {
     // Une erreur s'est produite lors de l'enregistrement
     echo "Erreur lors de l'enregistrement : " . $e->getMessage();
@@ -44,6 +60,3 @@ try {
 // Fermeture de la connexion à la base de données
 $conn = null;
 ?>
-
-
-

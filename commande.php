@@ -6,6 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./Style/style.css">
     <?php
+    session_start();
+
+    if (isset($_SESSION['name'])) {
+        $userName = $_SESSION['name'];
+    } 
 // Récupérer la date actuelle
 $date_actuelle = date('Y-m-d');
 
@@ -112,7 +117,11 @@ if (isset($_POST['generate'])){
         <!-- <div id="results"></div> -->
 
         <div class="dropdown">
-            <button class="dropbtn"><img class='headimg' src="./assets/images/1.svg  alt=""> compte</button>
+             <button class="dropbtn">    <?php if (isset($_SESSION['id'])) { ?>
+        <!-- Texte à afficher après la connexion -->
+       <?php echo $userName ?>
+      
+        <img id="welcome-text"  class='headimg' src="./assets/images/1.svg  alt="> <p id="welcome-text"> compte</p> <?php } ?></button>
             <div class="dropdown-content">
               <a href="./register.php">S'inscrire</a>
               <a href="login.php">Se connecter</a>

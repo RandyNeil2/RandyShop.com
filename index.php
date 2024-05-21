@@ -6,12 +6,19 @@
     <link rel="stylesheet" href="./Style/style.css">
     <title>Document</title>
 </head>
-<?php $jsondata = file_get_contents('./assets/data/category.json');
+
+
+
+
+<?php 
+session_start();
+
+if (isset($_SESSION['name'])) {
+    $userName = $_SESSION['name'];
+} 
+
+$jsondata = file_get_contents('./assets/data/category.json');
   $categories = json_decode($jsondata);
-
-  
-
-
   
 $Jsondata = file_get_contents('./assets/data/cart.json');
   $cartNum = json_decode($Jsondata,true);
@@ -46,7 +53,14 @@ $object_count = count($cartNum);
         <!-- <div id="results"></div> -->
 
         <div class="dropdown">
-            <button class="dropbtn"><img src="" alt=""> <img class='headimg' src="./assets/images/1.svg  alt=""> compte</button>
+            <button class="dropbtn">    <?php if (isset($_SESSION['name'])) { ?>
+        <!-- Texte à afficher après la connexion -->
+       <p><?php echo $userName ?></p>
+      
+       <script><img id="welcome-text"  class='headimg' src="./assets/images/1.svg  alt="> <p id="welcome-text"> compte</p> <?php } ?></button>
+            document.getElementById('welcome-text').style.display = 'none'; 
+       </script>
+    
             <div class="dropdown-content">
               <a href="./register.php"><img src="" alt=""> S'inscrire</a>
               <a href="login.php"> <img src="" alt=""> Se connecter</a>

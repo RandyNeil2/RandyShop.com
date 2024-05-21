@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // Informations de connexion à la base de données
 $servername = "localhost";
 $dbusername = "root";
@@ -37,11 +39,12 @@ function loginUser($email, $password) {
         // Vérification des résultats
         if ($stmt->rowCount() > 0) {
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
-                
-
+            
             // Vérification du mot de passe haché
             if (password_verify($password, $user['password'])) {
                 // Connexion réussie
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['user_email'] = $user['email'];
                 return "Connexion réussie.";
             } else {
                 // Mot de passe incorrect
@@ -64,7 +67,14 @@ function loginUser($email, $password) {
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email']) && isset($_POST['password'])) {
     $email = $_POST['email'];
     $user_password = $_POST['password'];
-    echo loginUser($email, $user_password);
+    $result = loginUser($email, $user_password);
+    echo $result;
+
+    // Si la connexion est réussie, redirigez vers la page d'accueil
+    if ($result == "Connexion réussie.") {
+        header("Location: index.php");
+        exit;
+    }
 } else {
     echo "Veuillez fournir un email et un mot de passe.";
 }

@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="./Style/style.css">
 </head>
 <body>
+  <?php 
+  session_start();
+
+  if (isset($_SESSION['name'])) {
+      $userName = $_SESSION['name'];
+  } 
+  ?>
 
     <nav>
         <a href="./index.php">
@@ -22,7 +29,13 @@
             <!-- <div id="results"></div> -->
     
             <div class="dropdown">
-                <button class="dropbtn"><img class='headimg' src="./assets/images/1.svg  alt=""> compte</button>
+            <button class="dropbtn">    <?php if (isset($_SESSION['name'])) { ?>
+        <!-- Texte à afficher après la connexion -->
+       <p><?php echo $userName ?></p>
+      
+       <script><img id="welcome-text"  class='headimg' src="./assets/images/1.svg  alt="> <p id="welcome-text"> compte</p> <?php } ?></button>
+            document.getElementById('welcome-text').style.display = 'none'; 
+       </script>
                 <div class="dropdown-content">
                   <a href="./register.php">S'inscrire</a>
                   <a href="login.php">Se connecter</a>
