@@ -14,7 +14,7 @@
       $userName = $_SESSION['name'];
   } 
   ?>
-    <div class="bodyDashboard">
+<div class="bodyDashboard">
     <nav>
         <a href="./index.php">
           <div class="logoPres">  
@@ -133,112 +133,103 @@
     <div id="div2" class="content" style="display: none;">
       <!-- Contenu de la deuxième div -->
       <div class="dashContainer">
+         <h2>Gestion des catégories</h2>
+         <button class='addProd' id="ajouter-produit-btn" onclick="afficherFormulaire()">+Ajouter</button>
+              <div id="overlay" onclick="cacherFormulaire()"></div>
+    <div id="formulaire-container" style="display: none;">
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        Nom de la catégorie : <input type="text" name="nom" required><br>
+        Description : <textarea name="description" rows="3" required></textarea><br>
+        <input type="submit" name="submit" value="Ajouter">
+        </div>
+    </form>
           <h2>
           Vos Produits
 
         </h2>
-        <form action="">
-         
-        <div class="containers">
-          <div class="alignementBouton">
-    <button class='addProd' id="ajouter-produit-btn" onclick="afficherFormulaire()">+Ajouter</button></div>
-    <div  id="overlay" onclick="cacherFormulaire()"></div>
+    <form action="add_products.php" method="post">
+  <div class="containers">
+    <div class="alignementBouton">
+      <button class='addProd' id="ajouter-produit-btn" onclick="afficherFormulaire()">+Ajouter</button>
+    </div>
+    <div id="overlay" onclick="cacherFormulaire()"></div>
     <div id="formulaire-container" style="display: none;">
       <h2>Ajouter un produit</h2>
-      <form>
-        <div class="update">
-      <div class="updateLeft">
-          
+      <div class="update">
+        <div class="updateLeft">
           <div class="form-group">
-          <label for="name">Nom :</label>
-          <input type="text" id="name" name="name" placeholder="Entrez nom du produit" required>
-        </div>
-        <div class="form-group">
-          <label for="name">Categorie:</label>
-          <input type="text" id="categorie" name="categorie" placeholder="Entrez sa categorie" required>
-        </div>
-
-        <div class="form-group">
-            <label for="description">Description :</label>
-            <textarea id="description" name="description" rows="7"  required></textarea>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Entrez nom du produit" required>
           </div>
-       
-
-
-      
-      </div>
+          <div class="form-group">
+            <label for="name">Categorie:</label>
+            <input type="text" id="categorie" name="categorie" placeholder="Entrez sa categorie">
+          </div>
+          <div class="form-group">
+            <label for="description">Description :</label>
+            <textarea id="description" name="description" rows="7" required></textarea>
+          </div>
+        </div>
         <div class="updateRight">
-        
-       <div class="qte-prix">
-        <div class="form-group">
-          <label for="prix">Prix Unitaire:</label>
-          <input type="number" id="prix" name="prix" step="0.01" required>
-        </div>
-
-        <div class="form-group">
-          <label for="quantite">Quantité :</label>
-          <input type="number" id="quantite" name="quantite" required>
+          <div class="qte-prix">
+            <div class="form-group">
+              <label for="prix">Prix Unitaire:</label>
+              <input type="number" id="prix" name="prix" step="0.01" required>
+            </div>
+            <div class="form-group">
+              <label for="quantite">Quantité :</label>
+              <input type="number" id="quantite" name="quantite" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="image">Image :</label>
+            <input type="file" id="image" name="image">
+          </div>
         </div>
       </div>
-
-
-        <div class="form-group">
-          <label for="image">Image :</label>
-          <input type="file" id="image" name="image">
-        </div>
-
-        </div>
-        
-        </div>
-        <div class="form-buttons">
+      <div class="form-buttons">
         <button class="goBack" type="button" onclick="annulerEnregistrement()">Annuler</button>
-          <button class="ok"  type="submit">Ajouter</button>
-          
-        </div>
-      </form>
+        <button class="ok" type="submit">Ajouter</button>
+      </div>
     </div>
   </div>
-          
-        </form>
-       
-        <table class="custom-table">
-          <thead>
-            <tr>
-              <th>Produits</th>
-              <th>Categories</th>
-              <th>PU</th>
-              <th>Quantité</th>
-              <th>Qté en Stock</th>
-              <th>Total</th>
-              <th >Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Donnée 1</td>
-              <td>Donnée 1</td>
-              <td>Donnée 2</td>
-              <td>Donnée 3</td>
-              <td>Donnée 1</td>
-              <td>Donnée 2</td>
-              <td class="action">
-              <div class="action1"><img src="./assets/images/edit-3-svgrepo-com.svg" alt=""><p>Edit</p></div>
-              <div class="action2"><img src="./assets/images/dustbin-bin-trush-svgrepo-com (1).svg" alt=""><p>Delete</p></div>
-            </td>
-            </tr>
-           
-            
-          </tbody>
-        </table>
-      </div>
-    </div>
-    
+</form>
+
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th>Produits</th>
+      <th>Categories</th>
+      <th>PU</th>
+      <th>Quantité</th>
+      <th>Qté en Stock</th>
+      <th>Total</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Donnée 1</td>
+      <td>Donnée 1</td>
+      <td>Donnée 2</td>
+      <td>Donnée 3</td>
+      <td>Donnée 1</td>
+      <td>Donnée 2</td>
+      <td class="action">
+        <div class="action1"><img src="./assets/images/edit-3-svgrepo-com.svg" alt=""><p>Edit</p></div>
+        <div class="action2"><img src="./assets/images/dustbin-bin-trush-svgrepo-com (1).svg" alt=""><p>Delete</p></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
 </div>
 </div>
 </div>
 
 
-<footer>
+<footer class="dashFooter">
     <div class="footer-content">
 
         <div class="footer-column">
@@ -289,6 +280,7 @@
     <div class="footer-copyright">
       <p>Copyright &copy; 2024 RandyShop</p>
     </div>
+
   </footer>
 </body>
 <script src="./script/script.js"></script>

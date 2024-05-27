@@ -107,8 +107,9 @@
               <!-- <div id="results"></div> -->
       
               <div class="dropdown">
-              <button class="dropbtn" style="background-color:#00353F; border:solid 2px white; color=#00b345; display=flex; align-items=center;justify-content=center">    <?php if (isset($_SESSION['name'])) { ?>
+              <button class="dropbtn" style="background-color:#00353F; border:solid 2px white; color=#00b345; display=flex; align-items=center;justify-content=center">   
         <!-- Texte à afficher après la connexion -->
+         <?php if (isset($_SESSION['name'])) { ?>
        <p><?php echo $userName ?></p>
       
        <script><img id="welcome-text"  class='headimg' src="./assets/images/1.svg  alt="> <p id="welcome-text"> compte</p></button>
@@ -120,7 +121,7 @@
                    document.getElementById('welcome-text').style.display = 'none';
                </script>
                     <a  href="./dashboard.php"> Mon espace </a>
-                    <a  href="./register.php">  se Deconnecter </a>
+                    <a  href="./logout.php">  se Deconnecter </a>
                        </div>
                 </div>
                  <?php } ?>

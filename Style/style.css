@@ -1781,7 +1781,13 @@ textarea {
 }
 
 
-
+/* .dashFooter{
+position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+ 
+}  */
 
 
 
@@ -1858,11 +1864,11 @@ textarea {
 
 }
 
-.bodyDashboard .dashContainer form{
+/* .bodyDashboard .dashContainer form{
   display: flex;
   justify-content: end;
   margin-right: 55px;
-}
+} */
 
 
 

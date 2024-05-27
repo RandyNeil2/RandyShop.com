@@ -12,7 +12,7 @@ $dbname = "randyshop";
  *
  * @param string $email L'email de l'utilisateur.
  * @param string $password Le mot de passe de l'utilisateur.
- * @return string Le résultat de la tentative de connexion.
+ * @return array|string Le résultat de la tentative de connexion sous forme d'un tableau avec les informations de l'utilisateur ou un message d'erreur.
  */
 function loginUser($email, $password) {
     global $servername, $dbusername, $dbpassword, $dbname;
@@ -42,10 +42,8 @@ function loginUser($email, $password) {
             
             // Vérification du mot de passe haché
             if (password_verify($password, $user['password'])) {
-                // Connexion réussie
-                $_SESSION['user_id'] = $user['id'];
-                $_SESSION['user_email'] = $user['email'];
-                return "Connexion réussie.";
+                // Connexion réussie, retourner les informations de l'utilisateur
+                return $user;
             } else {
                 // Mot de passe incorrect
                 return "Mot de passe incorrect.";
@@ -68,12 +66,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email']) && isset($_PO
     $email = $_POST['email'];
     $user_password = $_POST['password'];
     $result = loginUser($email, $user_password);
-    echo $result;
 
-    // Si la connexion est réussie, redirigez vers la page d'accueil
-    if ($result == "Connexion réussie.") {
+    if (is_array($result)) {
+        // Connexion réussie, stocker les informations de l'utilisateur dans la session
+        $_SESSION['id'] = $result['id'];
+        $_SESSION['email'] = $result['email'];
         header("Location: index.php");
         exit;
+    } else {
+        // Afficher le message d'erreur
+        echo $result;
     }
 } else {
     echo "Veuillez fournir un email et un mot de passe.";
